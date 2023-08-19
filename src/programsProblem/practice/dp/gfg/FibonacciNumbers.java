@@ -20,7 +20,7 @@ public class FibonacciNumbers {
         for (int i = 0; i < n - 2; i++) {
             dp[i + 2] = dp[i] + dp[i + 1];
         }
-        return dp[n -1];
+        return dp[n - 1];
     }
 
     //memoization method (Top-Down approach)
