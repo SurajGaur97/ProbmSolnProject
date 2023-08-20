@@ -3,6 +3,7 @@ package programsProblem.practice;
 import programsProblem.company.Cepheid.FindBookList;
 import programsProblem.company.mTap.FirstNonRepeatingVowel;
 import programsProblem.practice.dp.gfg.FibonacciNumbers;
+import programsProblem.practice.linkedList.RemoveLinkedListElement;
 import programsProblem.practice.maths.ReverseNumber;
 import programsProblem.practice.array.CapitaliseFirstLetterOfElementOfArr;
 import programsProblem.practice.array.RotateArray;
@@ -14,7 +15,12 @@ import programsProblem.practice.sortingAlgo.InsertionSort;
 import programsProblem.practice.tree.MaximumDepthOfBinaryTree;
 import programsProblem.practice.tree.TreeNode;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -66,12 +72,14 @@ public class Main {
 //    static MaximumDepthOfBinaryTree maximumDepthOfBinaryTree = new MaximumDepthOfBinaryTree();
 //    static RotateArray rotateArray = new RotateArray();
 //    static InsertionSort insertionSort = new InsertionSort();
-    static FibonacciNumbers fibonacciNumbers = new FibonacciNumbers();
+//    static FibonacciNumbers fibonacciNumbers = new FibonacciNumbers();
+    static RemoveLinkedListElement removeLinkedListElement = new RemoveLinkedListElement();
 
 	public static void main(String[] args) {
 
+        removeLinkedListElement.driverMethod();
 
-        System.out.println(fibonacciNumbers.driverMethod(7));
+//        System.out.println(fibonacciNumbers.driverMethod(7));
 
 //        int[] arr = new int[]{64, 25, 12, 22, 11};
 //        insertionSort.sortIt(arr);

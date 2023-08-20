@@ -1,19 +1,19 @@
 package programsProblem.practice.linkedList;
 
-class ListNode {
-    String data;
-    ListNode next;
-    ListNode() {}
-    ListNode(String data) {
-        this.data = data;
-    }
-    ListNode(String data, ListNode next) {
-        this.data = data;
-        this.next = next;
-    }
-}
-
 public class LinkedListOperation {
+    class ListNode {
+        String data;
+        ListNode next;
+        ListNode() {}
+        ListNode(String data) {
+            this.data = data;
+        }
+        ListNode(String data, ListNode next) {
+            this.data = data;
+            this.next = next;
+        }
+    }
+
     //Add first, last
     ListNode head;
     int size;
