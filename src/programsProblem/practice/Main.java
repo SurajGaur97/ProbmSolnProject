@@ -1,27 +1,5 @@
 package programsProblem.practice;
 
-import programsProblem.company.Cepheid.FindBookList;
-import programsProblem.company.mTap.FirstNonRepeatingVowel;
-import programsProblem.practice.dp.gfg.FibonacciNumbers;
-import programsProblem.practice.linkedList.RemoveLinkedListElement;
-import programsProblem.practice.maths.ReverseNumber;
-import programsProblem.practice.array.CapitaliseFirstLetterOfElementOfArr;
-import programsProblem.practice.array.RotateArray;
-import programsProblem.practice.dp.knapsack.*;
-import programsProblem.practice.dp.knapsack.unbounded.CoinChangeI;
-import programsProblem.practice.maths.ExcelSheetColumnNo;
-import programsProblem.practice.maths.ExcelSheetColumnTitle;
-import programsProblem.practice.sortingAlgo.InsertionSort;
-import programsProblem.practice.tree.MaximumDepthOfBinaryTree;
-import programsProblem.practice.tree.TreeNode;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
-
 public class Main {
 
 //	static CheckPrimeNum checkPrimeNum = new CheckPrimeNum();
@@ -73,11 +51,17 @@ public class Main {
 //    static RotateArray rotateArray = new RotateArray();
 //    static InsertionSort insertionSort = new InsertionSort();
 //    static FibonacciNumbers fibonacciNumbers = new FibonacciNumbers();
-    static RemoveLinkedListElement removeLinkedListElement = new RemoveLinkedListElement();
+//    static RemoveLinkedListElement removeLinkedListElement = new RemoveLinkedListElement();
+
+//    static BinomialCoefficient binomialCoefficient = new BinomialCoefficient();
 
 	public static void main(String[] args) {
 
-        removeLinkedListElement.driverMethod();
+//        binomialCoefficient.driverMethod();
+
+//        catalanNumber.driverMethod();
+
+//        removeLinkedListElement.driverMethod();
 
 //        System.out.println(fibonacciNumbers.driverMethod(7));
 
