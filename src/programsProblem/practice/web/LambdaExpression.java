@@ -14,7 +14,7 @@ public class LambdaExpression {
         Operation doCal = (int a, int b) -> {
             int c = a * 10 + b;
             int d = b * 10 + a;
-
+            //Suraj Gaur
             return c + d;
         };
 
