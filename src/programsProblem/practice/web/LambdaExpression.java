@@ -1,5 +1,7 @@
 package programsProblem.practice.web;
 
+import java.util.function.Predicate;
+
 public class LambdaExpression {
     interface Operation {
         int getRes(int a, int b);
@@ -10,12 +12,15 @@ public class LambdaExpression {
         Operation multiply = (int a, int b) -> a * b;
         Operation subtract = (int a, int b) -> b - a;
         Operation divide = (int a, int b) -> b / a;
-
         Operation doCal = (int a, int b) -> {
             int c = a * 10 + b;
             int d = b * 10 + a;
             return c + d;
         };
+
+        Predicate<String> prd = str -> str.isEmpty();
+        String str = "ddkfj jbf";
+        System.out.println(prd.test(str));
 
         int a = 10, b = 20;
         System.out.println(sum.getRes(a, b));
