@@ -21,7 +21,7 @@ public class GroupAnagrams {
 			}
 			
 			if(!map.containsKey(chars)) {
-				map.put(chars, new ArrayList<>(List.of(strs[i])));
+				map.put(chars, new ArrayList<String>(Arrays.asList(strs[i])));
 			}
 			else {
 				map.get(chars).add(strs[i]);
@@ -47,7 +47,7 @@ public class GroupAnagrams {
 	        String sorted = new String(chars);
 	        
 			if(!map.containsKey(sorted)) {
-				map.put(sorted, new ArrayList<String>(List.of(strs[i])));
+				map.put(sorted, new ArrayList<String>(Arrays.asList(strs[i])));
 			}
 			else {
 				map.get(sorted).add(strs[i]);

@@ -1,5 +1,23 @@
 package programsProblem.practice;
 
+import programsProblem.company.Cepheid.FindBookList;
+import programsProblem.company.mTap.FirstNonRepeatingVowel;
+import programsProblem.company.wonderlendhubs.FindSubstringWithUniqueChars;
+import programsProblem.practice.dp.gfg.FibonacciNumbers;
+import programsProblem.practice.maths.ReverseNumber;
+import programsProblem.practice.array.CapitaliseFirstLetterOfElementOfArr;
+import programsProblem.practice.array.RotateArray;
+import programsProblem.practice.dp.knapsack.*;
+import programsProblem.practice.dp.knapsack.unbounded.CoinChangeI;
+import programsProblem.practice.maths.ExcelSheetColumnNo;
+import programsProblem.practice.maths.ExcelSheetColumnTitle;
+import programsProblem.practice.sortingAlgo.InsertionSort;
+import programsProblem.practice.tree.MaximumDepthOfBinaryTree;
+import programsProblem.practice.tree.TreeNode;
+import programsProblem.practice.web.DeadLock;
+
+import java.util.Arrays;
+
 public class Main {
 
 //	static CheckPrimeNum checkPrimeNum = new CheckPrimeNum();
@@ -51,17 +69,28 @@ public class Main {
 //    static RotateArray rotateArray = new RotateArray();
 //    static InsertionSort insertionSort = new InsertionSort();
 //    static FibonacciNumbers fibonacciNumbers = new FibonacciNumbers();
-//    static RemoveLinkedListElement removeLinkedListElement = new RemoveLinkedListElement();
+//    static FindSubstringWithUniqueChars findSubstringWithUniqueChars = new FindSubstringWithUniqueChars();
 
-//    static BinomialCoefficient binomialCoefficient = new BinomialCoefficient();
 
 	public static void main(String[] args) {
 
-//        binomialCoefficient.driverMethod();
+//        Object obj1 = new Object();
+//        Object obj2 = new Object();
+//        Object obj3 = new Object();
+//        Thread t1 = new Thread(new DeadLock(obj1, obj2), "t1");
+//        Thread t2 = new Thread(new DeadLock(obj2, obj3), "t2");
+//        Thread t3 = new Thread(new DeadLock(obj3, obj1), "t3");
+//        try {
+//            t1.start();
+//            Thread.sleep(5000);
+//            t2.start();
+//            Thread.sleep(5000);
+//            t3.start();
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
 
-//        catalanNumber.driverMethod();
-
-//        removeLinkedListElement.driverMethod();
+//        findSubstringWithUniqueChars.driverMethod();
 
 //        System.out.println(fibonacciNumbers.driverMethod(7));
 
