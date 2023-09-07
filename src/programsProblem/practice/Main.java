@@ -1,6 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.linkedList.MiddleNode;
+import programsProblem.practice.linkedList.ReverseLL;
 
 public class Main {
 
@@ -45,7 +45,8 @@ public class Main {
 //	static CountSubsetSumWithGivenSum countSubsetSumWithGivenSum = new CountSubsetSumWithGivenSum();
 //	static CountSubsetSumWithGivenDiff countSubsetSumWithGivenDiff = new CountSubsetSumWithGivenDiff();
 //	static TargetSum targetSum = new TargetSum();
-//	static CapitaliseFirstLetterOfElementOfArr capitaliseFirstLetterOfElementOfArr = new CapitaliseFirstLetterOfElementOfArr();
+//	static CapitaliseFirstLetterOfElementOfArr capitaliseFirstLetterOfElementOfArr =
+//		new CapitaliseFirstLetterOfElementOfArr();
 //	static CountSubsetSum subsetSum = new CountSubsetSum();
 //    static ExcelSheetColumnTitle excelSheetColumnTitle = new ExcelSheetColumnTitle();
 //    static ExcelSheetColumnNo excelSheetColumnNo = new ExcelSheetColumnNo();
@@ -55,11 +56,14 @@ public class Main {
 //    static FibonacciNumbers fibonacciNumbers = new FibonacciNumbers();
 //    static FindSubstringWithUniqueChars findSubstringWithUniqueChars = new FindSubstringWithUniqueChars();
 //	static LinkedListDriverClass linkedListDriverClass = new LinkedListDriverClass();
-static MiddleNode middleNode = new MiddleNode();
+//	static MiddleNode middleNode = new MiddleNode();
+static ReverseLL reverseLL = new ReverseLL();
 
 	public static void main(String[] args) {
 
-		middleNode.driverClass();
+		reverseLL.diverMethod();
+
+//		middleNode.driverClass();
 
 //		linkedListDriverClass.masterDriverMethod();
 
