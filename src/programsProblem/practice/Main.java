@@ -1,6 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.linkedList.basicOperation.LinkedListDriverClass;
+import programsProblem.practice.linkedList.MiddleNode;
 
 public class Main {
 
@@ -54,11 +54,14 @@ public class Main {
 //    static InsertionSort insertionSort = new InsertionSort();
 //    static FibonacciNumbers fibonacciNumbers = new FibonacciNumbers();
 //    static FindSubstringWithUniqueChars findSubstringWithUniqueChars = new FindSubstringWithUniqueChars();
-	static LinkedListDriverClass linkedListDriverClass = new LinkedListDriverClass();
+//	static LinkedListDriverClass linkedListDriverClass = new LinkedListDriverClass();
+static MiddleNode middleNode = new MiddleNode();
 
 	public static void main(String[] args) {
 
-		linkedListDriverClass.masterDriverMethod();
+		middleNode.driverClass();
+
+//		linkedListDriverClass.masterDriverMethod();
 
 //        Object obj1 = new Object();
 //        Object obj2 = new Object();
