@@ -1,6 +1,6 @@
 package programsProblem.practice.linkedList;
 
-import java.util.LinkedList;
+import programsProblem.practice.linkedList.utils.ListNode;
 
 public class RemoveLinkedListElement {
     public void driverMethod() {

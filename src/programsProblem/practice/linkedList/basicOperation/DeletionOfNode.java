@@ -8,28 +8,17 @@ public class DeletionOfNode {
         return head = temp;
     }
 
+    //It will work for at-end node deletion
     public Node deleteAtSomewhereBetween(Node head, int index) {
-//        Node slowPtr = head;
-//        Node fastPtr = head;
-//        Node prev = null;
-//
-//        for (int i = 1; i < index; i++) {
-//            prev = slowPtr;
-//            slowPtr = slowPtr.next;
-//            fastPtr = fastPtr.next;
-//        }
-//
-//        prev.next = slowPtr.next;
-//        slowPtr = null; // Optional: Set the removed node to null
-
         Node curr = head;
 
-        for(int i = 0; i < index - 1; i++) {
+        for (int i = 0; i < index - 1; i++) {
             curr = curr.next;
         }
-        Node remNode = curr.next;
-        curr = remNode.next;
-        remNode = null;
+//        Node remNode = curr.next;
+//        curr = remNode.next;
+//        remNode = null;
+        curr.next = curr.next.next;
 
         return head;
     }
