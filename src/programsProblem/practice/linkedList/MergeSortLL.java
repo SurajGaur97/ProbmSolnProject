@@ -17,8 +17,9 @@ public class MergeSortLL {
         }
     }
 
+    //Main logic is behind this method
     private ListNode divide(ListNode head) {
-        if (head == null || head.next == null) return head;
+        if (head == null) return head;
 
         ListNode mid = getMid(head);
         ListNode secondHalf = mid.next;
@@ -30,6 +31,7 @@ public class MergeSortLL {
         return conquer(leftHalf, rightHalf);
     }
 
+    //Merging the two sorted lists as normal approach not anything new
     private ListNode conquer(ListNode leftHalf, ListNode rightHalf) {
         ListNode left = leftHalf;
         ListNode right = rightHalf;
