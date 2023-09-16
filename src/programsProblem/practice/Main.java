@@ -1,6 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.linkedList.RotateList;
+import programsProblem.practice.linkedList.AddTwoNums;
 import programsProblem.practice.linkedList.basicOperation.LinkedListDriverClass;
 
 public class Main {
@@ -71,12 +71,13 @@ static LinkedListDriverClass linkedListDriverClass = new LinkedListDriverClass()
 //	static IntersectPoint intersectPoint = new IntersectPoint();
 //	static RemoveLoopFromLL removeLoopFromLL = new RemoveLoopFromLL();
 //	static DetectLifeCycle detectLifeCycle = new DetectLifeCycle();
-	static RotateList rotateList = new RotateList();
-
+//	static RotateList rotateList = new RotateList();
+	static AddTwoNums addTwoNums = new AddTwoNums();
 
 	public static void main(String[] args) {
 
-		rotateList.driveMethod();
+		addTwoNums.driverMethod();
+//		rotateList.driveMethod();
 //		detectLifeCycle.driverMethod();
 //		removeLoopFromLL.driverMethod();
 //		intersectPoint.driverMethod();
