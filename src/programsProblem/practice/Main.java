@@ -1,6 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.linkedList.MergeSortLL;
+import programsProblem.practice.linkedList.RotateList;
 import programsProblem.practice.linkedList.basicOperation.LinkedListDriverClass;
 
 public class Main {
@@ -63,11 +63,28 @@ static LinkedListDriverClass linkedListDriverClass = new LinkedListDriverClass()
 //	static MergeTwoSortedList mergeTwoSortedList = new MergeTwoSortedList();
 //	static RemoveNthNodeFromEnd removeNthNodeFromEnd = new RemoveNthNodeFromEnd();
 //	static MergeSort mergeSort = new MergeSort();
-	static MergeSortLL mergeSortLL = new MergeSortLL();
+//	static MergeSortLL mergeSortLL = new MergeSortLL();
+//	static MergeKSortedList mergeKSortedList = new MergeKSortedList();
+//	static RemoveDuplicatesFromSortedList removeDuplicatesFromSortedList = new RemoveDuplicatesFromSortedList();
+//	static RemoveDuplicateFromUnsortedList fromUnsortedList = new RemoveDuplicateFromUnsortedList();
+//	static IntersactionOf2LL intersactionOf2LL = new IntersactionOf2LL();
+//	static IntersectPoint intersectPoint = new IntersectPoint();
+//	static RemoveLoopFromLL removeLoopFromLL = new RemoveLoopFromLL();
+//	static DetectLifeCycle detectLifeCycle = new DetectLifeCycle();
+	static RotateList rotateList = new RotateList();
+
 
 	public static void main(String[] args) {
 
-		mergeSortLL.driverMethod();
+		rotateList.driveMethod();
+//		detectLifeCycle.driverMethod();
+//		removeLoopFromLL.driverMethod();
+//		intersectPoint.driverMethod();
+//		intersactionOf2LL.driverMethod();
+//		fromUnsortedList.driverMethod();
+//		removeDuplicatesFromSortedList.driverMethod();
+//		mergeKSortedList.driverMethod();
+//		mergeSortLL.driverMethod();
 //		mergeSort.driverMethod();
 //		removeNthNodeFromEnd.driverMethod();
 //		mergeTwoSortedList.driverMethod();

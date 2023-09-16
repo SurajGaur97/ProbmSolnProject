@@ -54,4 +54,12 @@ public class LinkedListUtils {
         return newHead;
     }
 
+    public void printList(ListNode head) {
+        ListNode curr = head;
+        while (curr != null) {
+            System.out.print(curr);
+            curr = curr.next;
+        }
+    }
+
 }

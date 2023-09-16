@@ -19,7 +19,7 @@ public class MergeSortLL {
 
     //Main logic is behind this method
     private ListNode divide(ListNode head) {
-        if (head == null) return head;
+        if (head == null || head.next == null) return head;
 
         ListNode mid = getMid(head);
         ListNode secondHalf = mid.next;
@@ -33,25 +33,22 @@ public class MergeSortLL {
 
     //Merging the two sorted lists as normal approach not anything new
     private ListNode conquer(ListNode leftHalf, ListNode rightHalf) {
-        ListNode left = leftHalf;
-        ListNode right = rightHalf;
-
         ListNode merge = new ListNode();
         ListNode curr = merge;
 
-        while (left != null && right != null) {
-            if (left.val < right.val) {
-                curr.next = left;
-                left = left.next;
-            } else if (right.val < left.val) {
-                curr.next = right;
-                right = right.next;
+        while (leftHalf != null && rightHalf != null) {
+            if (leftHalf.val < rightHalf.val) {
+                curr.next = leftHalf;
+                leftHalf = leftHalf.next;
+            } else if (rightHalf.val < leftHalf.val) {
+                curr.next = rightHalf;
+                rightHalf = rightHalf.next;
             }
             curr = curr.next;
         }
 
-        if (left != null) curr.next = left;
-        if (right != null) curr.next = right;
+        if (leftHalf != null) curr.next = leftHalf;
+        if (rightHalf != null) curr.next = rightHalf;
 
         return merge.next;
     }
@@ -60,7 +57,11 @@ public class MergeSortLL {
         ListNode fast = head;
         ListNode slow = head;
 
-        while (fast != null && fast.next != null) {
+        //Note: Always take the first middle node(not the second one in the case of even no of elements)
+        //for solving linked list question when need to get middle node.
+        //Stack overflow if you put (fast != null && fast.next != null): this condition is used for getting
+        //the second node (which is not required here).
+        while (fast.next != null && fast.next.next != null) {
             fast = fast.next.next;
             slow = slow.next;
         }

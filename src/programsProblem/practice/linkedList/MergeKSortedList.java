@@ -15,7 +15,7 @@ public class MergeKSortedList {
         ListNode l3 = new ListNode(2);
         l3.next = new ListNode(6);
 
-        //Ignore here, can be used in leetcode for base condition.
+        //Ignore here. Can be used in leetcode for base condition.
         ListNode[] lists = new ListNode[]{l1, l2, l3};
         if (lists == null || lists.length == 0) return;
         if (lists.length == 1) lists[0] = lists[0];
@@ -24,7 +24,7 @@ public class MergeKSortedList {
         ListNode res = mergeKLists(lists, 0, lists.length - 1);
 
         while (res != null) {
-            System.out.println(res.val);
+            System.out.print(res);
             res = res.next;
         }
     }
@@ -48,16 +48,14 @@ public class MergeKSortedList {
     }
 
     //Leetcode best approach:
+    //Applying merge sort technique on lists for getting left and right list items.
     private ListNode mergeKLists(ListNode[] lists, int start, int end) {
-        if (start == end) {
-            return lists[start];
-        }
-        if (start + 1 == end) {
-            return mergeIt(lists[start], lists[end]);
-        }
+        if (start == end) return lists[start];
+
         int mid = start + (end - start) / 2;
         ListNode left = mergeKLists(lists, start, mid);
         ListNode right = mergeKLists(lists, mid + 1, end);
+
         return mergeIt(left, right);
     }
 
