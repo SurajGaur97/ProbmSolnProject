@@ -1,4 +1,4 @@
-package programsProblem.practice.tree;
+package programsProblem.practice.tree.utils;
 
 public class TreeNode {
     public int val;

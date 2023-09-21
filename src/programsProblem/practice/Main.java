@@ -1,7 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.linkedList.AddTwoNums;
-import programsProblem.practice.linkedList.basicOperation.LinkedListDriverClass;
+import programsProblem.practice.tree.MaxMinElementInBT;
 
 public class Main {
 
@@ -56,8 +55,8 @@ public class Main {
 //    static InsertionSort insertionSort = new InsertionSort();
 //    static FibonacciNumbers fibonacciNumbers = new FibonacciNumbers();
 //    static FindSubstringWithUniqueChars findSubstringWithUniqueChars = new FindSubstringWithUniqueChars();
-static LinkedListDriverClass linkedListDriverClass = new LinkedListDriverClass();
-	//	static MiddleNode middleNode = new MiddleNode();
+//    static LinkedListDriverClass linkedListDriverClass = new LinkedListDriverClass();
+//	static MiddleNode middleNode = new MiddleNode();
 //	static ReverseLL reverseLL = new ReverseLL();
 //	static CheckPalindrome checkPalindrome = new CheckPalindrome();
 //	static MergeTwoSortedList mergeTwoSortedList = new MergeTwoSortedList();
@@ -72,11 +71,17 @@ static LinkedListDriverClass linkedListDriverClass = new LinkedListDriverClass()
 //	static RemoveLoopFromLL removeLoopFromLL = new RemoveLoopFromLL();
 //	static DetectLifeCycle detectLifeCycle = new DetectLifeCycle();
 //	static RotateList rotateList = new RotateList();
-	static AddTwoNums addTwoNums = new AddTwoNums();
+//	static AddTwoNums addTwoNums = new AddTwoNums();
+//	static ReverseNodeInKGroup reverseNodeInKGroup = new ReverseNodeInKGroup();
+//    static ReverseSentence reverseSentence = new ReverseSentence();
+static MaxMinElementInBT maxMinElementInBT = new MaxMinElementInBT();
 
 	public static void main(String[] args) {
 
-		addTwoNums.driverMethod();
+        maxMinElementInBT.driverMethod();
+//        reverseSentence.driverMethod();
+//		reverseNodeInKGroup.driverMethod();
+//		addTwoNums.driverMethod();
 //		rotateList.driveMethod();
 //		detectLifeCycle.driverMethod();
 //		removeLoopFromLL.driverMethod();
