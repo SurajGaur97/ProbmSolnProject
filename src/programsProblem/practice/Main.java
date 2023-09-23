@@ -1,6 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.tree.MaxMinElementInBT;
+import programsProblem.practice.tree.DiameterOfBT;
 
 public class Main {
 
@@ -74,11 +74,14 @@ public class Main {
 //	static AddTwoNums addTwoNums = new AddTwoNums();
 //	static ReverseNodeInKGroup reverseNodeInKGroup = new ReverseNodeInKGroup();
 //    static ReverseSentence reverseSentence = new ReverseSentence();
-static MaxMinElementInBT maxMinElementInBT = new MaxMinElementInBT();
+//	static MaxMinElementInBT maxMinElementInBT = new MaxMinElementInBT();
+static DiameterOfBT diameterOfBT = new DiameterOfBT();
+
 
 	public static void main(String[] args) {
 
-        maxMinElementInBT.driverMethod();
+		diameterOfBT.driverMethod();
+//        maxMinElementInBT.driverMethod();
 //        reverseSentence.driverMethod();
 //		reverseNodeInKGroup.driverMethod();
 //		addTwoNums.driverMethod();

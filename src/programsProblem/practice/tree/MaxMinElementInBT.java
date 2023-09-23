@@ -1,14 +1,13 @@
 package programsProblem.practice.tree;
 
-import programsProblem.practice.tree.utils.BuildTree;
+import programsProblem.practice.tree.utils.TreeBuilder;
 import programsProblem.practice.tree.utils.TreeNode;
 
 public class MaxMinElementInBT {
-    BuildTree buildTree = new BuildTree();
+    TreeBuilder treeBuilder = new TreeBuilder();
 
     public void driverMethod() {
-        TreeNode root = buildTree.buildTree("3 1 10 N 2 5 N N N 4 7 N N 6 8 N N N 9");
-        TreeNode root1 = buildTree.buildTree("10 2 60 40 50 20 N");
+        TreeNode root = treeBuilder.buildTree("3 1 10 N 2 5 N N N 4 7 N N 6 8 N N N 9");
 
         System.out.println(getMinElement(root));
         System.out.println(getMaxElement(root));

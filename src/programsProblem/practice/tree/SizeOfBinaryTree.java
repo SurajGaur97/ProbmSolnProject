@@ -22,8 +22,6 @@ public class SizeOfBinaryTree {
         int leftCount = getSize(root.left);
         int rightCount = getSize(root.right);
 
-        int totalCount = leftCount + rightCount + 1;
-
-        return totalCount;
+        return leftCount + rightCount + 1;
     }
 }

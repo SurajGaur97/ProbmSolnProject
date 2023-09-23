@@ -3,7 +3,7 @@ package programsProblem.practice.tree.utils;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BuildTree {
+public class TreeBuilder {
     public TreeNode buildTree(String str) {
 
         if (str.length() == 0 || str.charAt(0) == 'N') {

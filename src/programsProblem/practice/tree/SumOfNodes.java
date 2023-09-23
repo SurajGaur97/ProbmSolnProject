@@ -21,8 +21,6 @@ public class SumOfNodes {
         int sumOfLeftBT = sumBT(root.left);
         int sumOfRightBT = sumBT(root.right);
 
-        int totalNodeSum = sumOfLeftBT + sumOfRightBT + root.val;
-
-        return totalNodeSum;
+        return sumOfLeftBT + sumOfRightBT + root.val;
     }
 }
