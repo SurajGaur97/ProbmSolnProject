@@ -1,6 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.tree.DiameterOfBT;
+import programsProblem.practice.tree.InOrderTraversalBT;
 
 public class Main {
 
@@ -75,12 +75,23 @@ public class Main {
 //	static ReverseNodeInKGroup reverseNodeInKGroup = new ReverseNodeInKGroup();
 //    static ReverseSentence reverseSentence = new ReverseSentence();
 //	static MaxMinElementInBT maxMinElementInBT = new MaxMinElementInBT();
-static DiameterOfBT diameterOfBT = new DiameterOfBT();
-
+//	static DiameterOfBT diameterOfBT = new DiameterOfBT();
+//	static SymmetricTree symmetricTree = new SymmetricTree();
+//	static BalancedBT balancedBT = new BalancedBT();
+//	static Check2BTIsomorphic check2BTIsomorphic = new Check2BTIsomorphic();
+//	static PreOrderTraversalBT preOrderTraversalBT = new PreOrderTraversalBT();
+static InOrderTraversalBT inOrderTraversalBT = new InOrderTraversalBT();
+//	static PostOrderTraversalBT postOrderTraversalBT = new PostOrderTraversalBT();
 
 	public static void main(String[] args) {
 
-		diameterOfBT.driverMethod();
+//		postOrderTraversalBT.driverMethod();
+		inOrderTraversalBT.driverMethod();
+//		preOrderTraversalBT.driverMethod();
+//		check2BTIsomorphic.driverMethod();
+//		balancedBT.driverMethod();
+//		symmetricTree.driverMethod();
+//		diameterOfBT.driverMethod();
 //        maxMinElementInBT.driverMethod();
 //        reverseSentence.driverMethod();
 //		reverseNodeInKGroup.driverMethod();

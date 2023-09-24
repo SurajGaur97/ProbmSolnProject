@@ -2,9 +2,9 @@ package programsProblem.practice.tree;
 
 import programsProblem.practice.tree.utils.TreeNode;
 
-public class MaximumDepthOfBinaryTree {
+public class HeightOfBT {
     public int maxDepth(TreeNode root) {
-        if (root == null)
+        if(root == null)
             return 0;
 
         int lsize = this.maxDepth(root.left);
