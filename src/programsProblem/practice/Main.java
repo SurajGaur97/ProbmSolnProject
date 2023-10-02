@@ -1,6 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.tree.LeftViewOfBT;
+import programsProblem.practice.tree.TopViewOfBT;
 
 public class Main {
 
@@ -84,11 +84,16 @@ public class Main {
 //	static PostOrderTraversalBT postOrderTraversalBT = new PostOrderTraversalBT();
 //	static LevelOrderTraversalBT levelOrderTraversalBT = new LevelOrderTraversalBT();
 //	static HeightOfBT heightOfBT = new HeightOfBT();
-static LeftViewOfBT leftViewOfBT = new LeftViewOfBT();
+//	static LeftViewOfBT leftViewOfBT = new LeftViewOfBT();
+//	static VerticalOrderTraversal verticalOrderTraversal = new VerticalOrderTraversal();
+static TopViewOfBT topViewOfBT = new TopViewOfBT();
+
 
 	public static void main(String[] args) {
 
-		leftViewOfBT.driverMethod();
+		topViewOfBT.driverMethod();
+//		verticalOrderTraversal.driverMethod();
+//		leftViewOfBT.driverMethod();
 //		heightOfBT.driveMethod();
 //		levelOrderTraversalBT.driverMethod();
 //		postOrderTraversalBT.driverMethod();

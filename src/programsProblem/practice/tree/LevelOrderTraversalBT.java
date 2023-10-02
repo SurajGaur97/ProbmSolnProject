@@ -9,10 +9,8 @@ import java.util.List;
 import java.util.Queue;
 
 public class LevelOrderTraversalBT {
-    TreeBuilder treeBuilder = new TreeBuilder();
-
     public void driverMethod() {
-        TreeNode root = treeBuilder.buildTree("1 2 3 4 5 6 7 9");
+        TreeNode root = new TreeBuilder().buildTree("1 2 3 4 5 6 7 9");
 
         System.out.println(levelOrderTraversalIterative(root));
     }
