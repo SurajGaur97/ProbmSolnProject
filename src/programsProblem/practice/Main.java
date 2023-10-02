@@ -1,6 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.tree.InOrderTraversalBT;
+import programsProblem.practice.tree.LeftViewOfBT;
 
 public class Main {
 
@@ -80,13 +80,19 @@ public class Main {
 //	static BalancedBT balancedBT = new BalancedBT();
 //	static Check2BTIsomorphic check2BTIsomorphic = new Check2BTIsomorphic();
 //	static PreOrderTraversalBT preOrderTraversalBT = new PreOrderTraversalBT();
-static InOrderTraversalBT inOrderTraversalBT = new InOrderTraversalBT();
+//	static InOrderTraversalBT inOrderTraversalBT = new InOrderTraversalBT();
 //	static PostOrderTraversalBT postOrderTraversalBT = new PostOrderTraversalBT();
+//	static LevelOrderTraversalBT levelOrderTraversalBT = new LevelOrderTraversalBT();
+//	static HeightOfBT heightOfBT = new HeightOfBT();
+static LeftViewOfBT leftViewOfBT = new LeftViewOfBT();
 
 	public static void main(String[] args) {
 
+		leftViewOfBT.driverMethod();
+//		heightOfBT.driveMethod();
+//		levelOrderTraversalBT.driverMethod();
 //		postOrderTraversalBT.driverMethod();
-		inOrderTraversalBT.driverMethod();
+//		inOrderTraversalBT.driverMethod();
 //		preOrderTraversalBT.driverMethod();
 //		check2BTIsomorphic.driverMethod();
 //		balancedBT.driverMethod();

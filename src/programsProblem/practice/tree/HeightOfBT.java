@@ -1,8 +1,17 @@
 package programsProblem.practice.tree;
 
+import programsProblem.practice.tree.utils.TreeBuilder;
 import programsProblem.practice.tree.utils.TreeNode;
 
+//Remark: Level or height or depth of a binary tree are same things.
 public class HeightOfBT {
+    TreeBuilder treeBuilder = new TreeBuilder();
+
+    public void driveMethod() {
+        TreeNode root = treeBuilder.buildTree("1 2 3 4 5 6 7 9");
+        System.out.println(maxDepth(root));
+    }
+
     public int maxDepth(TreeNode root) {
         if(root == null)
             return 0;

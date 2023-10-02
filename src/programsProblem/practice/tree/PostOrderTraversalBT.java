@@ -9,9 +9,6 @@ import java.util.Stack;
 
 public class PostOrderTraversalBT {
     TreeBuilder treeBuilder = new TreeBuilder();
-    //Recursive Approach
-    List<Integer> res = new ArrayList<>();
-
     public void driverMethod() {
         TreeNode root = treeBuilder.buildTree("1 2 3 4 5 6");
 
@@ -40,6 +37,9 @@ public class PostOrderTraversalBT {
         }
         return res;
     }
+
+    //Recursive Approach
+    List<Integer> res = new ArrayList<>();
 
     private List<Integer> postOrderTraversal(TreeNode root) {
         if(root == null) return res;
