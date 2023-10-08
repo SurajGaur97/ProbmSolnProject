@@ -14,7 +14,8 @@ public class TopViewOfBT {
 
     //Similar to vertical order traversal
     private List<Integer> topView(TreeNode root) {
-        Map<Integer, Integer> map = new TreeMap<>(); //only changed s to take integer not the list of Integer in value of map.
+        //only changed values of map to take integer not the list of Integer in value of map.
+        Map<Integer, Integer> map = new TreeMap<>();
         Queue<Pair<Integer, TreeNode>> que = new LinkedList<>();
 
         que.add(new Pair<>(0, root));

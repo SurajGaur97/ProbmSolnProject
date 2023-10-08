@@ -1,6 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.tree.TopViewOfBT;
+import programsProblem.practice.tree.BoundaryTraversal;
 
 public class Main {
 
@@ -86,12 +86,47 @@ public class Main {
 //	static HeightOfBT heightOfBT = new HeightOfBT();
 //	static LeftViewOfBT leftViewOfBT = new LeftViewOfBT();
 //	static VerticalOrderTraversal verticalOrderTraversal = new VerticalOrderTraversal();
-static TopViewOfBT topViewOfBT = new TopViewOfBT();
-
+//	static TopViewOfBT topViewOfBT = new TopViewOfBT();
+//	static BottomViewOfBT bottomViewOfBT = new BottomViewOfBT();
+//	static RightViewOfBT rightViewOfBT = new RightViewOfBT();
+//	static PrintLeafNodesOfBT printLeafNodesOfBT = new PrintLeafNodesOfBT();
+static BoundaryTraversal printBoundaryNodes = new BoundaryTraversal();
 
 	public static void main(String[] args) {
 
-		topViewOfBT.driverMethod();
+		printBoundaryNodes.driverMethod();
+//		printLeafNodesOfBT.driverMethod();
+//		rightViewOfBT.driverMethod();
+//		bottomViewOfBT.driverMethod();
+//		StringBuilder inputDate = new StringBuilder("6789[(1,2),(1,4),(1,3),(1,2),(2,-1),(2,-1)]");
+//
+//		String str = inputDate.toString();
+//		int n = 0;
+//		for(int i = 0 ; i < str.length(); i++) {
+//			if(str.charAt(i) == '['){
+//				n = i;
+//				break;
+//			}
+//		}
+//		String size  = str.substring(0,n);
+//		String data = str.substring(n +1, str.length() - 1);
+//		String[] pairStrings = data.split(",");
+//
+//		for(int i = 0; i < pairStrings.length; i++) {
+//			// Remove parentheses and split into key and value
+//			String[] parts = pairStrings[i].replaceAll("[()]", "").split(",");
+//			int x = Integer.parseInt(parts[0].trim());
+//			i++;
+//			parts = pairStrings[i].replaceAll("[()]", "").split(",");
+//			int value = Integer.parseInt(parts[0].trim());
+//			System.out.println(key + " " + value);
+//
+//			if(key == 1) {
+//
+//			}
+//		}
+
+//		topViewOfBT.driverMethod();
 //		verticalOrderTraversal.driverMethod();
 //		leftViewOfBT.driverMethod();
 //		heightOfBT.driveMethod();

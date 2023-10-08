@@ -15,7 +15,7 @@ public class VerticalOrderTraversal {
 
     //Similar to Level order traversal
     private ArrayList<Integer> verticalOrder(TreeNode root) {
-        Map<Integer, List<Integer>> map = new TreeMap<>();
+        Map<Integer, List<Integer>> map = new TreeMap<>();  //Taken TreeMap because we need to print map in sorted order with respect to keys.
         Queue<Pair<Integer, TreeNode>> que = new LinkedList<>();
 
         que.add(new Pair<>(0, root));
