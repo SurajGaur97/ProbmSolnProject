@@ -36,16 +36,18 @@ public class RightViewOfBT {
         List<Integer> res = new ArrayList<>();
         Queue<TreeNode> que = new LinkedList<>();
         que.add(root);
+        int level = 0;  //this will be the level of binary tree.
 
         while (!que.isEmpty()) {
-            int level = que.size();
-            for (int i = 0; i < level; i++) {
+            int size = que.size();
+            for (int i = 0; i < size; i++) {
                 TreeNode curr = que.poll();
 
-                if(i == level - 1) res.add(curr.val);
+                if(i == size - 1) res.add(curr.val);
 
                 if(curr.left != null) que.add(curr.left);
                 if(curr.right != null) que.add(curr.right);
+                level++;
             }
         }
         return res;

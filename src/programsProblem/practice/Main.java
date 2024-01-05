@@ -1,6 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.tree.BoundaryTraversal;
+import programsProblem.practice.maths.PowerOfTwo;
 
 public class Main {
 
@@ -90,11 +90,61 @@ public class Main {
 //	static BottomViewOfBT bottomViewOfBT = new BottomViewOfBT();
 //	static RightViewOfBT rightViewOfBT = new RightViewOfBT();
 //	static PrintLeafNodesOfBT printLeafNodesOfBT = new PrintLeafNodesOfBT();
-static BoundaryTraversal printBoundaryNodes = new BoundaryTraversal();
+//	static BoundaryTraversal printBoundaryNodes = new BoundaryTraversal();
+//	static ZigZagOrderTraversalOfBT zagOrderTraversalOfBT = new ZigZagOrderTraversalOfBT();
+//	static DiagonalOrderTraversal diagonalOrderTraversal = new DiagonalOrderTraversal();
+//	static DuplicateSubtreeInBT duplicateSubtreeInBT = new DuplicateSubtreeInBT();
+//	static MergeAndSortTwoArray mergeAndSortTwoArray = new MergeAndSortTwoArray();
+//	static IsomorphicStrings isomorphicStrings = new IsomorphicStrings();
+//	static PrintCountOfCharInString printCountOfCharInString = new PrintCountOfCharInString();
+//	static ListFilter listFilter = new ListFilter();
+//	static MapMarksWithGrad mapMarksWithGrad = new MapMarksWithGrad();
+//	static BasicStreamMethods basicStreamMethods = new BasicStreamMethods();
+//	static AddDigits addDigits = new AddDigits();
+//	static IsomorphicStrings isomorphicStrings = new IsomorphicStrings();
+//	static ContainsDuplicate2 containsDuplicate2 = new ContainsDuplicate2();
+static PowerOfTwo powerOfTwo = new PowerOfTwo();
 
 	public static void main(String[] args) {
 
-		printBoundaryNodes.driverMethod();
+		powerOfTwo.driverMethod();
+//		containsDuplicate2.driverMethod();
+//		isomorphicStrings.driverMethod();
+//		addDigits.driverMethod();
+
+//		basicStreamMethods.driverMethod();
+
+//		mapMarksWithGrad.driverMethod();
+//		listFilter.driverMethod();
+
+//		DefaultNStaticMethods.getNMsg();
+//		DefaultNStaticMethods staticMethods = new DefaultNStaticMethodsImpl();
+//		staticMethods.abc();
+//		staticMethods.getMsg();
+//		staticMethods.getMsg1();
+
+//		printCountOfCharInString.driverMethod();
+//		isomorphicStrings.isIsomorphic("paper","title");
+//		List<Student> ls = new ArrayList<>();
+//		StudentAddress sa = new StudentAddress();
+//		sa.setId(2);
+//		sa.setDistrict("Dist1");
+//		ls.add(new Student(1,"name1", sa));
+//
+//		StudentAddress sa1 = new StudentAddress();
+//		sa.setId(3);
+//		sa.setDistrict("Dist2");
+//		ls.add(sa1);
+
+//		for (Student st: ls) {
+//			System.out.println(st);
+//		}
+
+//		mergeAndSortTwoArray.driverMethod();
+//		duplicateSubtreeInBT.driverMethod();
+//		diagonalOrderTraversal.driverMethod();
+//		zagOrderTraversalOfBT.driverMethod();
+//		printBoundaryNodes.driverMethod();
 //		printLeafNodesOfBT.driverMethod();
 //		rightViewOfBT.driverMethod();
 //		bottomViewOfBT.driverMethod();

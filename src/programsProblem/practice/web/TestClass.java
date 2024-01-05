@@ -1,14 +1,14 @@
 package programsProblem.practice.web;
 
-public class TestClass implements TestInterface, Teting{
+public class TestClass implements TestInterface, Teting {
 
-	@Override
-	public int getSum(int a, int b) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    @Override
+    public int getSum(int a, int b) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
 
-	@Override
+    @Override
 	public String getName(int id) {
 		// TODO Auto-generated method stub
 		return null;
@@ -22,7 +22,7 @@ public class TestClass implements TestInterface, Teting{
 	@Override
 	public void sum(int s, int b) {
 		// TODO Auto-generated method stub
-		
-	}
+
+    }
 
 }
