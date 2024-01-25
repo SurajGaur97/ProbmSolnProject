@@ -1,6 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.array.CheckNandItsDoubleExists;
+import programsProblem.practice.array.ReplaceElementsWithGreatestElementOnRightSide;
 
 public class Main {
 
@@ -110,11 +110,14 @@ public class Main {
 //	static RemoveElement removeElement = new RemoveElement();
 //	static MinBin minBin = new MinBin();
 //	static RemoveDuplicatesFromSortedArray removeDuplicatesFromSortedArray = new RemoveDuplicatesFromSortedArray();
-static CheckNandItsDoubleExists checkNandItsDoubleExists = new CheckNandItsDoubleExists();
+//	static CheckNandItsDoubleExists checkNandItsDoubleExists = new CheckNandItsDoubleExists();
+//	static DriverClass driverClass = new ValidMountainArray();
+static DriverClass driverClass = new ReplaceElementsWithGreatestElementOnRightSide();
 
 	public static void main(String[] args) {
 
-		checkNandItsDoubleExists.driverMethod();
+		driverClass.driverMethod();
+//		checkNandItsDoubleExists.driverMethod();
 //		removeDuplicatesFromSortedArray.driverMethod();
 //		minBin.driverMethod();
 //		removeElement.driverMethod();
