@@ -1,6 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.maths.PowerOfTwo;
+import programsProblem.practice.array.CheckNandItsDoubleExists;
 
 public class Main {
 
@@ -103,11 +103,43 @@ public class Main {
 //	static AddDigits addDigits = new AddDigits();
 //	static IsomorphicStrings isomorphicStrings = new IsomorphicStrings();
 //	static ContainsDuplicate2 containsDuplicate2 = new ContainsDuplicate2();
-static PowerOfTwo powerOfTwo = new PowerOfTwo();
+//	static PowerOfTwo powerOfTwo = new PowerOfTwo();
+//	static RansomNote ransomNote = new RansomNote();
+//	static SortedSquares sortedSquares = new SortedSquares();
+//	static MergeSortedArray mergeSortedArray = new MergeSortedArray();
+//	static RemoveElement removeElement = new RemoveElement();
+//	static MinBin minBin = new MinBin();
+//	static RemoveDuplicatesFromSortedArray removeDuplicatesFromSortedArray = new RemoveDuplicatesFromSortedArray();
+static CheckNandItsDoubleExists checkNandItsDoubleExists = new CheckNandItsDoubleExists();
 
 	public static void main(String[] args) {
 
-		powerOfTwo.driverMethod();
+		checkNandItsDoubleExists.driverMethod();
+//		removeDuplicatesFromSortedArray.driverMethod();
+//		minBin.driverMethod();
+//		removeElement.driverMethod();
+//		mergeSortedArray.driverMethod();
+
+//		List<List<Integer>> numbers = Arrays.asList(
+//				Arrays.asList(1, 2, 3),
+//				Arrays.asList(4, 5, 6),
+//				Arrays.asList(7, 8, 9)
+//		);
+//
+//		List<Integer> flattenedList = numbers.stream()
+//				.flatMap(List::stream)
+//				.map(n -> n * 2)
+//				.collect(Collectors.toList());
+//
+//		System.out.println(flattenedList);
+//
+//		List<String> words = new ArrayList<>(Arrays.asList("apple", "banana", "orange"));
+//		words.stream().forEach(word -> word.replace(word,"prefix_" + word));
+
+//		System.out.println(words);
+//		sortedSquares.driverMethod();
+//		ransomNote.driverMethod();
+//		powerOfTwo.driverMethod();
 //		containsDuplicate2.driverMethod();
 //		isomorphicStrings.driverMethod();
 //		addDigits.driverMethod();

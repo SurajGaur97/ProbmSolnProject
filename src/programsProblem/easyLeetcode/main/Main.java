@@ -1,9 +1,6 @@
 package programsProblem.easyLeetcode.main;
 
-import programsProblem.easyLeetcode.*;
-
-import java.util.ArrayList;
-import java.util.List;
+import programsProblem.easyLeetcode.StackUsingQueues;
 
 public class Main {
 //    static RomanToInteger romanToInteger = new RomanToInteger();
@@ -17,23 +14,25 @@ public class Main {
 //    static PascalsTriangle pascalsTriangle = new PascalsTriangle();
 //    static BinaryTreePreorderTraversal binaryTreePreorderTraversal = new BinaryTreePreorderTraversal();
 //    static IsSameTree isSameTree = new IsSameTree();
-    static  IntersactionOfTwoLinkedList intersactionOfTwoLinkedList = new IntersactionOfTwoLinkedList();
+//    static  IntersactionOfTwoLinkedList intersactionOfTwoLinkedList = new IntersactionOfTwoLinkedList();
+static StackUsingQueues stackUsingQueues = new StackUsingQueues();
 
     public static void main(String[] args) {
 
-        ListNode list1 = new ListNode(4);
-        list1.next = new ListNode(1);
-        list1.next.next = new ListNode(8);
-        list1.next.next.next = new ListNode(4);
-        list1.next.next.next.next = new ListNode(5);
-
-        ListNode list2 = new ListNode(5);
-        list2.next = new ListNode(6);
-        list2.next.next = new ListNode(1);
-        list2.next.next.next = new ListNode(8);
-        list2.next.next.next.next = new ListNode(4);
-        list2.next.next.next.next.next = new ListNode(5);
-        System.out.println(intersactionOfTwoLinkedList.getIntersectionNode1(list1, list2).val);
+//        stackUsingQueues.driverMethod();
+//        ListNode list1 = new ListNode(4);
+//        list1.next = new ListNode(1);
+//        list1.next.next = new ListNode(8);
+//        list1.next.next.next = new ListNode(4);
+//        list1.next.next.next.next = new ListNode(5);
+//
+//        ListNode list2 = new ListNode(5);
+//        list2.next = new ListNode(6);
+//        list2.next.next = new ListNode(1);
+//        list2.next.next.next = new ListNode(8);
+//        list2.next.next.next.next = new ListNode(4);
+//        list2.next.next.next.next.next = new ListNode(5);
+//        System.out.println(intersactionOfTwoLinkedList.getIntersectionNode1(list1, list2).val);
 
         /*TreeNode p = new TreeNode(3);
         p.left = new TreeNode(1);

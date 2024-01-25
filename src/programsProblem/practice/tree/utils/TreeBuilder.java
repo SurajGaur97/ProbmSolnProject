@@ -4,9 +4,16 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class TreeBuilder {
-    public TreeNode buildTree(String str) {
 
-        if (str.length() == 0 || str.charAt(0) == 'N') {
+    /**
+     * Exmple: TreeNode root = new TreeBuilder().buildTree("4 5 2 N N 3 1 6 7");
+     *
+     * @param str
+     * @return
+     */
+    public static TreeNode buildTree(String str) {
+
+        if(str.length() == 0 || str.charAt(0) == 'N'){
             return null;
         }
 
