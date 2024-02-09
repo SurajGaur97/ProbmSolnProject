@@ -1,11 +1,21 @@
 package programsProblem.practice.array;
 
+import java.util.Arrays;
+import java.util.function.IntUnaryOperator;
+
 public class SortedSquares {
     public void driverMethod() {
+//        int[] nums = new int[]{-4,-1,0,2,10};
         int[] nums = new int[]{-7, -3, 0, 2, 3, 7, 11};
         for (Integer num : sortedSquares(nums)){
             System.out.print(num + ", ");
         }
+    }
+
+    public int[] sortedSquares1(int[] nums) {
+        IntUnaryOperator squareOfNum = (x) -> x * x;
+        int[] nums1 = Arrays.stream(nums).map(squareOfNum).sorted().toArray();
+        return nums1;
     }
 
     public int[] sortedSquares(int[] nums) {
@@ -22,18 +32,6 @@ public class SortedSquares {
             }
             k--;
         }
-
         return resNums;
-    }
-
-    public void duplicateZeros(int[] arr) {
-        for (int i = 0;i < arr.length - 1;i++){
-            if(arr[i] == 0){
-                for (int j = arr.length - 1;j >= i + 1;j--){
-                    arr[j] = arr[j - 1];
-                }
-                arr[i + 1] = 0;
-            }
-        }
     }
 }

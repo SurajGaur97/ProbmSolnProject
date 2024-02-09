@@ -1,0 +1,18 @@
+package programsProblem.practice.streamApi;
+
+import programsProblem.practice.DriverClass;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class SumOfNosInList implements DriverClass<Integer> {
+    @Override
+    public void driverMethod() {
+        List<Integer> lst = Arrays.asList(3, 5, 6, 8, 9);
+        int sumOfOdd = lst.stream().filter(x -> x % 2 != 0).reduce(0, Integer::sum);
+        int sumOfEven = lst.stream().filter(x -> x % 2 == 0).reduce(0, Integer::sum);
+
+        printElement(sumOfOdd);
+        printElement(sumOfEven);
+    }
+}
