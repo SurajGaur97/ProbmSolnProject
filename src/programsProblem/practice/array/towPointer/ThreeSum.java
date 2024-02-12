@@ -1,4 +1,4 @@
-package programsProblem.practice.array;
+package programsProblem.practice.array.towPointer;
 
 import programsProblem.practice.DriverClass;
 

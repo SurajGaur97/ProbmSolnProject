@@ -1,6 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.array.SearchRangeOfTarget;
+import programsProblem.practice.array.binarySearch.Permutation;
 
 public class Main {
 
@@ -124,7 +124,9 @@ public class Main {
 //	static DriverClass<Integer> driverClass = new ThreeSumClosest();
 //	static DriverClass<Integer> driverClass = new TwoSum();
 //	static DriverClass<Integer> driverClass = new FourSum();
-static DriverClass<Integer> driverClass = new SearchRangeOfTarget();
+//	static DriverClass<Integer> driverClass = new SearchRangeOfTarget();
+static DriverClass<Integer> driverClass = new Permutation();
+
 
 	public static void main(String[] args) {
 

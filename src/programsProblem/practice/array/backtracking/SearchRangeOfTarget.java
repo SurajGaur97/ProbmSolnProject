@@ -1,6 +1,9 @@
-package programsProblem.practice.array;
+package programsProblem.practice.array.backtracking;
 
 import programsProblem.practice.DriverClass;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class SearchRangeOfTarget implements DriverClass<Integer> {
     @Override
@@ -14,6 +17,32 @@ public class SearchRangeOfTarget implements DriverClass<Integer> {
         printElement(searchRange(nums, target));
     }
 
+    //Solved and approached by me
+    public int[] searchRange2(int[] nums, int target) {
+        Map<Integer, Integer> hm = new HashMap<>();
+
+        for (int num : nums){
+            if(num == target){
+                if(!hm.containsKey(num))
+                    hm.put(num, 1);
+                else
+                    hm.put(num, hm.get(num) + 1);
+            }
+        }
+
+        int start = -1, end = -1;
+        for (int i = 0;i < nums.length;i++){
+            if(nums[i] == target){
+                start = i;
+                break;
+            }
+        }
+        if(hm.containsKey(target))
+            end = start + hm.get(target) - 1;
+
+        return new int[]{start, end};
+    }
+
     //Taken help of Mahesh solve by me. 1ms on LeetCode
     public int[] searchRange1(int[] nums, int target) {
         int start = firstOccurUsingBinary(nums, target);
@@ -25,6 +54,7 @@ public class SearchRangeOfTarget implements DriverClass<Integer> {
         int srt = 0, end = nums.length - 1, ans = -1;
 
         while (srt <= end){
+            //Binary Search
             int mid = srt + (end - srt) / 2;
 
             if(nums[mid] == target){
@@ -43,6 +73,7 @@ public class SearchRangeOfTarget implements DriverClass<Integer> {
         int srt = 0, end = nums.length - 1, ans = -1;
 
         while (srt <= end){
+            //Binary Search
             int mid = srt + (end - srt) / 2;
 
             if(nums[mid] == target){
