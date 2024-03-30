@@ -1,6 +1,6 @@
 package programsProblem.practice.web;
 
-import programsProblem.practice.DriverClass;
+import programsProblem.practice.common.DriverClass;
 
 import java.util.concurrent.CompletableFuture;
 

@@ -1,6 +1,6 @@
 package programsProblem.practice.array.towPointer;
 
-import programsProblem.practice.DriverClass;
+import programsProblem.practice.common.DriverClass;
 
 public class MedianOdTwoSortedArrays implements DriverClass<Integer> {
     @Override

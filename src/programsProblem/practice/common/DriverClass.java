@@ -1,4 +1,6 @@
-package programsProblem.practice;
+package programsProblem.practice.common;
+
+import programsProblem.practice.linkedList.utils.ListNode;
 
 import java.util.List;
 import java.util.Map;
@@ -32,6 +34,13 @@ public interface DriverClass<T> {
     default void printElement(Set<T> set) {
         for (T ele : set){
             System.out.print(ele + " ");
+        }
+    }
+
+    default void printElement(ListNode list) {
+        while (list != null){
+            System.out.print(list.val + " ");
+            list = list.next;
         }
     }
 

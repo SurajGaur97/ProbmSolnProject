@@ -1,6 +1,6 @@
-package programsProblem.practice.array.backtracking;
+package programsProblem.practice.array.binarySearch;
 
-import programsProblem.practice.DriverClass;
+import programsProblem.practice.common.DriverClass;
 
 import java.util.HashMap;
 import java.util.Map;

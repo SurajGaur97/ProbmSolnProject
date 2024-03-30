@@ -6,13 +6,13 @@ import programsProblem.practice.linkedList.utils.ListNode;
 public class AddTwoNums {
     LinkedListBuilder builder = new LinkedListBuilder();
     public void driverMethod() {
-//        ListNode l1 = new ListNode(2);
-//        l1.next = new ListNode(4);
-//        l1.next.next = new ListNode(3);
+//        DoublyListNode l1 = new DoublyListNode(2);
+//        l1.next = new DoublyListNode(4);
+//        l1.next.next = new DoublyListNode(3);
 //
-//        ListNode l2 = new ListNode(5);
-//        l2.next = new ListNode(6);
-//        l2.next.next = new ListNode(4);
+//        DoublyListNode l2 = new DoublyListNode(5);
+//        l2.next = new DoublyListNode(6);
+//        l2.next.next = new DoublyListNode(4);
         ListNode l3 = builder.buildLinkedList("1 2 3 4 5 6 7");
 
         ListNode l1 = new ListNode(9);

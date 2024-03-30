@@ -11,7 +11,7 @@ import java.util.Queue;
 public class RightViewOfBT {
     public void driverMethod() {
         TreeNode root = new TreeBuilder().buildTree("1 2 3 4 5 6 7 9");
-        System.out.println(rightViewBT(root));
+        System.out.println(rightView(root));
     }
 
     //Recursive approach
@@ -24,8 +24,10 @@ public class RightViewOfBT {
     private void rightViewHelper(TreeNode root, List<Integer> lst, int level) {
         if(root == null) return;
 
-        if(lst.size() <= level) lst.add(level, root.val);
-        else lst.set(level, root.val);
+        if(lst.size() <= level)
+            lst.add(level, root.val);
+        else
+            lst.set(level, root.val);
 
         rightViewHelper(root.left, lst, level + 1);
         rightViewHelper(root.right, lst, level + 1);
@@ -36,7 +38,6 @@ public class RightViewOfBT {
         List<Integer> res = new ArrayList<>();
         Queue<TreeNode> que = new LinkedList<>();
         que.add(root);
-        int level = 0;  //this will be the level of binary tree.
 
         while (!que.isEmpty()) {
             int size = que.size();
@@ -47,7 +48,6 @@ public class RightViewOfBT {
 
                 if(curr.left != null) que.add(curr.left);
                 if(curr.right != null) que.add(curr.right);
-                level++;
             }
         }
         return res;

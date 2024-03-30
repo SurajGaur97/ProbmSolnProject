@@ -20,7 +20,7 @@ public class MergeKSortedList {
         if (lists == null || lists.length == 0) return;
         if (lists.length == 1) lists[0] = lists[0];
 
-//        ListNode res = mergeKLists1(lists);
+//        DoublyListNode res = mergeKLists1(lists);
         ListNode res = mergeKLists(lists, 0, lists.length - 1);
 
         while (res != null) {

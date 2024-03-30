@@ -14,14 +14,14 @@ public class RemoveLinkedListElement {
 
         ListNode list = removeElements(head, 6);
 
-//        ListNode head = new ListNode(7);
-//        head.next = new ListNode(7);
-//        head.next.next = new ListNode(7);
-//        head.next.next.next = new ListNode(7);
+//        DoublyListNode head = new DoublyListNode(7);
+//        head.next = new DoublyListNode(7);
+//        head.next.next = new DoublyListNode(7);
+//        head.next.next.next = new DoublyListNode(7);
 //
-//        ListNode list = removeElements(head, 7);
+//        DoublyListNode list = removeElements(head, 7);
 
-        while(list != null) {
+        while (list != null){
             System.out.println(list.val);
             list = list.next;
         }

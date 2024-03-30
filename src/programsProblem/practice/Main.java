@@ -1,6 +1,13 @@
 package programsProblem.practice;
 
-import programsProblem.practice.array.binarySearch.Permutation;
+import programsProblem.practice.array.mapping.FindPosNegPair;
+import programsProblem.practice.array.pathFinding.UniquePaths;
+import programsProblem.practice.common.DriverClass;
+import programsProblem.practice.string.twoPointer.FindNoOfSubstring;
+import programsProblem.practice.tree.RightViewOfBT;
+import programsProblem.practice.web.ListOfDifferentTypes.Utilization;
+
+import java.util.*;
 
 public class Main {
 
@@ -125,12 +132,33 @@ public class Main {
 //	static DriverClass<Integer> driverClass = new TwoSum();
 //	static DriverClass<Integer> driverClass = new FourSum();
 //	static DriverClass<Integer> driverClass = new SearchRangeOfTarget();
-static DriverClass<Integer> driverClass = new Permutation();
-
+//	static DriverClass<Integer> driverClass = new Permutation();
+//	static DriverClass<Integer> driverClass = new NextPermutation();
+//	static DriverClass<Integer> driverClass = new NoOfGoodPair();
+//	static DriverClass<Integer> driverClass = new SmallerNumbersThanCurrent();
+//	static DriverClass<Integer> driverClass = new SumIndicesWithKSetBits();
+//	static DriverClass<Integer> driverClass = new LeftRightDifference();
+//	static DriverClass<Integer> driverClass = new CreateTargetArray();
+//	static DriverClass<Integer> driverClass = new MinimumNumberGame();
+//	static DriverClass<Integer> driverClass = new DecompressRLElist();
+//	static DriverClass<Integer> driverClass = new MaxLenOfSortedSubArray();
+//	static DriverClass<Integer> driverClass = new DifferenceOfEleSumDigSum();
+//	static DriverClass<Integer> driverClass = new ArithmeticTriplets();
+//	static DriverClass<Integer> driverClass = new CountKDifference();
+//	static DriverClass<Integer> driverClass = new SumOddLengthSubarrays();
+//    static DriverClass<Integer> driverClass = new MergeTwoSortedArray();
+//    static DriverClass<Integer> driverClass = new MergeTwoSortedList();
+//    static DriverClass<Integer> driverClass = new Sort012();
+//    static DriverClass<Integer> driverClass = new Utilization();
+//    static DriverClass<Integer> driverClass = new FindPosNegPair();
+//    static DriverClass<String> driverClass = new FindNoOfSubstring();
+static DriverClass<Integer> driverClass = new UniquePaths();
 
 	public static void main(String[] args) {
 
-		driverClass.driverMethod();
+        driverClass.driverMethod();
+
+//        List<CustomHashMap.Entry<K, V>>[] buckets = new ArrayList[5];
 
 //        int[] arr = new int[]{64, 25, 12, 22, 11};
 //        insertionSort.sortIt(arr);
@@ -211,4 +239,5 @@ static DriverClass<Integer> driverClass = new Permutation();
 
 		it.inOrderTraverse(it.root);*/
 	}
+
 }

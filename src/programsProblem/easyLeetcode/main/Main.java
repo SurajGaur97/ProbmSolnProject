@@ -20,18 +20,18 @@ static StackUsingQueues stackUsingQueues = new StackUsingQueues();
     public static void main(String[] args) {
 
 //        stackUsingQueues.driverMethod();
-//        ListNode list1 = new ListNode(4);
-//        list1.next = new ListNode(1);
-//        list1.next.next = new ListNode(8);
-//        list1.next.next.next = new ListNode(4);
-//        list1.next.next.next.next = new ListNode(5);
+//        DoublyListNode list1 = new DoublyListNode(4);
+//        list1.next = new DoublyListNode(1);
+//        list1.next.next = new DoublyListNode(8);
+//        list1.next.next.next = new DoublyListNode(4);
+//        list1.next.next.next.next = new DoublyListNode(5);
 //
-//        ListNode list2 = new ListNode(5);
-//        list2.next = new ListNode(6);
-//        list2.next.next = new ListNode(1);
-//        list2.next.next.next = new ListNode(8);
-//        list2.next.next.next.next = new ListNode(4);
-//        list2.next.next.next.next.next = new ListNode(5);
+//        DoublyListNode list2 = new DoublyListNode(5);
+//        list2.next = new DoublyListNode(6);
+//        list2.next.next = new DoublyListNode(1);
+//        list2.next.next.next = new DoublyListNode(8);
+//        list2.next.next.next.next = new DoublyListNode(4);
+//        list2.next.next.next.next.next = new DoublyListNode(5);
 //        System.out.println(intersactionOfTwoLinkedList.getIntersectionNode1(list1, list2).val);
 
         /*TreeNode p = new TreeNode(3);
@@ -53,11 +53,11 @@ static StackUsingQueues stackUsingQueues = new StackUsingQueues();
 
 //        System.out.println(pascalsTriangle.generate(5));
 
-        /*ListNode list1 = new ListNode(1);
-        list1.next = new ListNode(1);
-        list1.next.next = new ListNode(2);
-        list1.next.next.next = new ListNode(3);
-        list1.next.next.next.next = new ListNode(3);
+        /*DoublyListNode list1 = new DoublyListNode(1);
+        list1.next = new DoublyListNode(1);
+        list1.next.next = new DoublyListNode(2);
+        list1.next.next.next = new DoublyListNode(3);
+        list1.next.next.next.next = new DoublyListNode(3);
         removeDuplicates.deleteDuplicates(list1);*/
 
 //        System.out.println(addBinary.addBinary("101111", "10"));
@@ -74,17 +74,17 @@ static StackUsingQueues stackUsingQueues = new StackUsingQueues();
             System.out.print(num + " ");
         }*/
 
-        /*ListNode list1 = new ListNode(1);
-        list1.next = new ListNode(2);
-        list1.next.next = new ListNode(2);
+        /*DoublyListNode list1 = new DoublyListNode(1);
+        list1.next = new DoublyListNode(2);
+        list1.next.next = new DoublyListNode(2);
 
-        ListNode list2 = new ListNode(1);
-        list2.next = new ListNode(2);
-        list2.next.next = new ListNode(3);
-        list2.next.next.next = new ListNode(4);
-        list2.next.next.next.next = new ListNode(5);
+        DoublyListNode list2 = new DoublyListNode(1);
+        list2.next = new DoublyListNode(2);
+        list2.next.next = new DoublyListNode(3);
+        list2.next.next.next = new DoublyListNode(4);
+        list2.next.next.next.next = new DoublyListNode(5);
 
-        ListNode dlist1 = list1;
+        DoublyListNode dlist1 = list1;
         System.out.print("First node: ");
         while(dlist1 != null) {
             System.out.print(dlist1.val + " -> ");
@@ -92,7 +92,7 @@ static StackUsingQueues stackUsingQueues = new StackUsingQueues();
         }
         System.out.print("null");
 
-        ListNode dlist2 = list2;
+        DoublyListNode dlist2 = list2;
         System.out.print("      Second node: ");
         while(dlist2 != null) {
             System.out.print(dlist2.val + " -> ");
@@ -100,7 +100,7 @@ static StackUsingQueues stackUsingQueues = new StackUsingQueues();
         }
         System.out.println("null");
 
-        ListNode node = mergeTwoSortedLists.mergeTwoLists(list1, list2);
+        DoublyListNode node = mergeTwoSortedLists.mergeTwoLists(list1, list2);
         System.out.print("Result List: ");
         while(node != null) {
             System.out.print(node.val + " -> ");
