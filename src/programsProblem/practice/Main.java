@@ -1,13 +1,22 @@
 package programsProblem.practice;
 
+import programsProblem.practice.array.CountRemovals;
+import programsProblem.practice.array.basic.ProductExceptSelf;
 import programsProblem.practice.array.mapping.FindPosNegPair;
 import programsProblem.practice.array.pathFinding.UniquePaths;
 import programsProblem.practice.common.DriverClass;
+import programsProblem.practice.streamApi.PrintCountOfCharInString;
+import programsProblem.practice.streamApi.SumOfNosInList;
+import programsProblem.practice.string.BinaryGap;
+import programsProblem.practice.string.DecodeEncodedString;
+import programsProblem.practice.string.GreatestUpperLowerCaseChar;
 import programsProblem.practice.string.twoPointer.FindNoOfSubstring;
 import programsProblem.practice.tree.RightViewOfBT;
 import programsProblem.practice.web.ListOfDifferentTypes.Utilization;
 
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Main {
 
@@ -102,8 +111,8 @@ public class Main {
 //	static DuplicateSubtreeInBT duplicateSubtreeInBT = new DuplicateSubtreeInBT();
 //	static MergeAndSortTwoArray mergeAndSortTwoArray = new MergeAndSortTwoArray();
 //	static IsomorphicStrings isomorphicStrings = new IsomorphicStrings();
-//	static PrintCountOfCharInString printCountOfCharInString = new PrintCountOfCharInString();
-//	static ListFilter listFilter = new ListFilter();
+static PrintCountOfCharInString printCountOfCharInString = new PrintCountOfCharInString();
+	//	static ListFilter listFilter = new ListFilter();
 //	static MapMarksWithGrad mapMarksWithGrad = new MapMarksWithGrad();
 //	static BasicStreamMethods basicStreamMethods = new BasicStreamMethods();
 //	static AddDigits addDigits = new AddDigits();
@@ -152,11 +161,22 @@ public class Main {
 //    static DriverClass<Integer> driverClass = new Utilization();
 //    static DriverClass<Integer> driverClass = new FindPosNegPair();
 //    static DriverClass<String> driverClass = new FindNoOfSubstring();
-static DriverClass<Integer> driverClass = new UniquePaths();
+//	static DriverClass<Integer> driverClass = new UniquePaths();
+//	static DriverClass<Integer> driverClass = new CountRemovals();
+//	static DriverClass<String> driverClass = new GreatestUpperLowerCaseChar();
+//	static DriverClass<Integer> driverClass = new BinaryGap();
+//	static DriverClass<Integer> driverClass = new SumOfNosInList();
+//	static DriverClass<Integer> driverClass = new ProductExceptSelf();
+	static DriverClass<String> driverClass = new DecodeEncodedString();
 
 	public static void main(String[] args) {
 
-        driverClass.driverMethod();
+		driverClass.driverMethod();
+
+//		printCountOfCharInString.driverMethod();
+
+//		System.out.println(Integer.toString(343,2));
+
 
 //        List<CustomHashMap.Entry<K, V>>[] buckets = new ArrayList[5];
 
@@ -241,3 +261,4 @@ static DriverClass<Integer> driverClass = new UniquePaths();
 	}
 
 }
+

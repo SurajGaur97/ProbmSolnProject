@@ -1,6 +1,6 @@
 package programsProblem.practice.tree;
 
-import javafx.util.Pair;
+import programsProblem.practice.tree.utils.Pair;
 import programsProblem.practice.tree.utils.TreeBuilder;
 import programsProblem.practice.tree.utils.TreeNode;
 

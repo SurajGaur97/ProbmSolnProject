@@ -18,7 +18,7 @@ public class HeightOfBT {
 
     public int maxDepth(TreeNode root) {
         if(root == null)
-            return 0;
+            return 0;   //return -1     :if anything coming wrong.
 
         int lsize = this.maxDepth(root.left);
         int rsize = this.maxDepth(root.right);

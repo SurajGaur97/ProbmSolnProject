@@ -12,7 +12,14 @@ public class SumOfNosInList implements DriverClass<Integer> {
         int sumOfOdd = lst.stream().filter(x -> x % 2 != 0).reduce(0, Integer::sum);
         int sumOfEven = lst.stream().filter(x -> x % 2 == 0).reduce(0, Integer::sum);
 
+        int evenSum = lst.stream().filter(x -> x % 2 != 0).mapToInt(Integer::intValue).sum();
+        int sum = lst.stream().mapToInt(n -> n).sum();
+
+
         printElement(sumOfOdd);
         printElement(sumOfEven);
+        printElement(evenSum);
+        printElement(sum);
+
     }
 }
