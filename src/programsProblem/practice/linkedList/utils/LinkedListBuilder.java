@@ -1,6 +1,11 @@
 package programsProblem.practice.linkedList.utils;
 
 public class LinkedListBuilder {
+    /**
+     * @apiNote Eg: ListNode head = new LinkedListBuilder().buildLinkedList("1 2 3 4 5");
+     * @param str
+     * @return
+     */
     public ListNode buildLinkedList(String str) {
         ListNode LinkedList = new ListNode();
         ListNode curr = LinkedList;
