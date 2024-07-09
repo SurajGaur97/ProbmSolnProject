@@ -15,6 +15,15 @@ public interface DriverClass<T> {
         }
     }
 
+    default void printElement(int[][] nums) {
+        for (int i = 0;i < nums[0].length;i++){
+            for (int j = 0;j < nums[0].length;j++){
+                System.out.print(nums[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
     default void printElement(T[] array) {
         for (T ele : array){
             System.out.print(ele + " ");

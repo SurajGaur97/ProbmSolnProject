@@ -6,18 +6,19 @@ import java.util.Queue;
 public class TreeBuilder {
 
     /**
-     * Exmple: TreeNode root = new TreeBuilder().buildTree("4 5 2 N N 3 1 6 7");
+     * Example: TreeNode root = new TreeBuilder().buildTree("4,5,2,N,N,3,1,6,7");
+     * Example: TreeNode root = new TreeBuilder().buildTree("4,5,2,null,null,3,1,6,7");
      *
      * @param str
      * @return
      */
     public static TreeNode buildTree(String str) {
 
-        if(str.length() == 0 || str.charAt(0) == 'N'){
+        if(str.length() == 0 || str.charAt(0) == 'N' || Character.toString(str.charAt(0)).equals("null")){
             return null;
         }
 
-        String[] ip = str.split(" ");
+        String[] ip = str.split(",");
         // Create the root of the tree
         TreeNode root = new TreeNode(Integer.parseInt(ip[0]));
         // Push the root to the queue
@@ -38,7 +39,7 @@ public class TreeBuilder {
             String currVal = ip[i];
 
             // If the left child is not null
-            if (!currVal.equals("N")) {
+            if(!currVal.equals("N") && !currVal.equals("null")){
 
                 // Create the left child for the current node
                 currNode.left = new TreeNode(Integer.parseInt(currVal));
@@ -54,7 +55,7 @@ public class TreeBuilder {
             currVal = ip[i];
 
             // If the right child is not null
-            if (!currVal.equals("N")) {
+            if(!currVal.equals("N") && !currVal.equals("null")){
 
                 // Create the right child for the current node
                 currNode.right = new TreeNode(Integer.parseInt(currVal));

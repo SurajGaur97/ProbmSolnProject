@@ -1,15 +1,39 @@
 package programsProblem.practice.tree;
 
+import programsProblem.practice.common.DriverClass;
 import programsProblem.practice.tree.utils.Pair;
 import programsProblem.practice.tree.utils.TreeBuilder;
 import programsProblem.practice.tree.utils.TreeNode;
 
 import java.util.*;
 
-public class BottomViewOfBT {
+public class BottomViewOfBT implements DriverClass<Integer> {
+    @Override
     public void driverMethod() {
-        TreeNode root = new TreeBuilder().buildTree("1 2 3 4 5 6 7 9");
-        System.out.println(bottomView(root));
+        TreeNode root = TreeBuilder.buildTree("1,2,3,4,5,6,7,9");   //[9, 4, 2, 6, 3, 7]
+//        printElement(bottomView(root));
+        printElement(bottomViewRecursive(root));
+    }
+
+    private List<Integer> bottomViewRecursive(TreeNode root) {
+        Map<Integer, Integer> map = new TreeMap<>();
+        helperMethod(root, 0, map);
+
+        ArrayList<Integer> res = new ArrayList<>();
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()){
+            res.add(entry.getValue());
+        }
+
+        return res;
+    }
+
+    private void helperMethod(TreeNode root, int heightDistance, Map<Integer, Integer> map) {
+        if(root == null) return;
+
+        map.put(heightDistance, root.val);
+
+        helperMethod(root.left, heightDistance - 1, map);
+        helperMethod(root.right, heightDistance + 1, map);
     }
 
     //Similar to vertical order traversal
@@ -19,7 +43,7 @@ public class BottomViewOfBT {
 
         que.add(new Pair<>(0, root));
 
-        while (!que.isEmpty()) {
+        while (!que.isEmpty()){
             Pair<Integer, TreeNode> pair = que.poll();
             TreeNode curr = pair.getValue();
             int heightDistance = pair.getKey();

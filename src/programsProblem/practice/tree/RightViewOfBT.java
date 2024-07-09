@@ -1,5 +1,6 @@
 package programsProblem.practice.tree;
 
+import programsProblem.practice.common.DriverClass;
 import programsProblem.practice.tree.utils.TreeBuilder;
 import programsProblem.practice.tree.utils.TreeNode;
 
@@ -8,10 +9,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class RightViewOfBT {
+public class RightViewOfBT implements DriverClass<Integer> {
+    @Override
     public void driverMethod() {
-        TreeNode root = new TreeBuilder().buildTree("1 2 3 4 5 6 7 9");
-        System.out.println(rightView(root));
+//        TreeNode root = TreeBuilder.buildTree("1,2,3,4,5,6,7,9");
+        TreeNode root = TreeBuilder.buildTree("1,2,3,null,5,null,4");
+        printElement(rightViewBT(root));
     }
 
     //Recursive approach

@@ -1,20 +1,41 @@
 package programsProblem.practice.linkedList;
 
+import programsProblem.practice.common.DriverClass;
+import programsProblem.practice.linkedList.utils.LinkedListBuilder;
 import programsProblem.practice.linkedList.utils.LinkedListUtils;
 import programsProblem.practice.linkedList.utils.ListNode;
 
-public class CheckPalindrome {
+import java.util.Stack;
+
+public class CheckPalindrome implements DriverClass<Integer> {
     private final LinkedListUtils linkedListUtils = new LinkedListUtils();
 
+    @Override
     public void driverMethod() {
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(1);
-        head.next.next = new ListNode(2);
-        head.next.next.next = new ListNode(1);
-//        head.next.next.next.next = new DoublyListNode(1);
+        ListNode head = LinkedListBuilder.buildLinkedList("1 2 3 2 1");
 
-        System.out.println(isPalindrome(head));
-//        System.out.println(checkPalindrome3(head));
+        System.out.println(checkPalindrome(head));
+    }
+
+    private boolean checkPalindrome(ListNode head) {
+        Stack<Integer> stk = new Stack<>();
+
+        ListNode curr = head;
+
+        while (curr != null){
+            stk.push(curr.val);
+            curr = curr.next;
+        }
+
+        curr = head;
+        while (curr != null){
+            if(curr.val != stk.pop()){
+                return false;
+            }
+            curr = curr.next;
+        }
+
+        return true;
     }
 
     //Reverse the list
@@ -23,8 +44,8 @@ public class CheckPalindrome {
         ListNode copy = linkedListUtils.createCopy(head);
         ListNode revList = linkedListUtils.reverseLL(copy);
 
-        while (curr != null && revList != null) {
-            if (curr.val != revList.val) {
+        while (curr != null && revList != null){
+            if(curr.val != revList.val){
                 return false;
             }
             curr = curr.next;

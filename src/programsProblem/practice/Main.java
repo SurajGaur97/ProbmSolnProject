@@ -1,19 +1,7 @@
 package programsProblem.practice;
 
-import programsProblem.company.ibm.BankChatBot;
-import programsProblem.practice.array.PlusMultArray;
-import programsProblem.practice.array.mapping.EqualRowAndColumnPairs2352;
-import programsProblem.practice.array.queue.Dota2Senate649;
-import programsProblem.practice.array.stack.AsteroidCollision;
-import programsProblem.practice.array.stack.DecodeString394;
-import programsProblem.practice.array.towPointer.MaxTrappingRainWater;
 import programsProblem.practice.common.DriverClass;
-import programsProblem.practice.linkedList.MaximumTwinSumOfALinkedList;
-import programsProblem.practice.linkedList.OddEvenLinkedList328;
-import programsProblem.practice.linkedList.utils.LinkedListBuilder;
-import programsProblem.practice.linkedList.utils.ListNode;
-import programsProblem.practice.streamApi.PrintCountOfCharInString;
-import programsProblem.practice.string.RemovingStarsFromString2390;
+import programsProblem.practice.tree.BottomViewOfBT;
 
 public class Main {
 
@@ -99,7 +87,7 @@ public class Main {
 //	static LeftViewOfBT leftViewOfBT = new LeftViewOfBT();
 //	static VerticalOrderTraversal verticalOrderTraversal = new VerticalOrderTraversal();
 //	static TopViewOfBT topViewOfBT = new TopViewOfBT();
-//	static BottomViewOfBT bottomViewOfBT = new BottomViewOfBT();
+//	static DriverClass<Integer> driverClass = new BottomViewOfBT();
 //	static RightViewOfBT rightViewOfBT = new RightViewOfBT();
 //	static PrintLeafNodesOfBT printLeafNodesOfBT = new PrintLeafNodesOfBT();
 //	static BoundaryTraversal printBoundaryNodes = new BoundaryTraversal();
@@ -108,8 +96,8 @@ public class Main {
 //	static DuplicateSubtreeInBT duplicateSubtreeInBT = new DuplicateSubtreeInBT();
 //	static MergeAndSortTwoArray mergeAndSortTwoArray = new MergeAndSortTwoArray();
 //	static IsomorphicStrings isomorphicStrings = new IsomorphicStrings();
-static PrintCountOfCharInString printCountOfCharInString = new PrintCountOfCharInString();
-	//	static ListFilter listFilter = new ListFilter();
+//static PrintCountOfCharInString printCountOfCharInString = new PrintCountOfCharInString();
+//	static ListFilter listFilter = new ListFilter();
 //	static MapMarksWithGrad mapMarksWithGrad = new MapMarksWithGrad();
 //	static BasicStreamMethods basicStreamMethods = new BasicStreamMethods();
 //	static AddDigits addDigits = new AddDigits();
@@ -184,97 +172,20 @@ static PrintCountOfCharInString printCountOfCharInString = new PrintCountOfCharI
 //	static DriverClass<String> driverClass = new Dota2Senate649();
 //	static DriverClass<Integer> driverClass = new BankChatBot();
 //	static DriverClass<Integer> driverClass = new OddEvenLinkedList328();
-	static DriverClass<Integer> driverClass = new MaximumTwinSumOfALinkedList();
+//	static DriverClass<Integer> driverClass = new MaximumTwinSumOfALinkedList();
+//	static DriverClass<Integer> driverClass = new LeafSimilarTrees872();
+//	static DriverClass<Integer> driverClass = new CountGoodNodesInBinaryTree();
+//	static DriverClass<Integer> driverClass = new CheckPalindrome();
+//	static DriverClass<Integer> driverClass = new Rotate90Degree();
+//	static DriverClass<Integer> driverClass = new KthMaxAndMinElement();
+//	static DriverClass<Integer> driverClass = new PathSum3();
+//	static DriverClass<Integer> driverClass = new LowestCommonAncestor236();
+//	static DriverClass<Integer> driverClass = new RightViewOfBT();
+//	static DriverClass<Integer> driverClass = new MaximumLevelSum();
+static DriverClass<Integer> driverClass = new BottomViewOfBT();
 
 	public static void main(String[] args) {
-
 		driverClass.driverMethod();
-
-//		printCountOfCharInString.driverMethod();
-
-//		System.out.println(Integer.toString(343,2));
-
-
-//        List<CustomHashMap.Entry<K, V>>[] buckets = new ArrayList[5];
-
-//        int[] arr = new int[]{64, 25, 12, 22, 11};
-//        insertionSort.sortIt(arr);
-//        for(int num: arr) {
-//            System.out.print(num + " ");
-//        }
-
-//        for (int num: rotateArray.getRotatedArray(new int[]{1,2,3,4,5}, 10)) {
-//            System.out.print(num + " ");
-//        }
-
-//        TreeNode tn = new TreeNode(3);
-//        tn.left = new TreeNode(9);
-//        tn.right = new TreeNode(20);
-//        tn.right.left = new TreeNode(15);
-//        tn.right.right = new TreeNode(7);
-//        System.out.println(maximumDepthOfBinaryTree.maxDepth(tn));
-
-//        System.out.println(excelSheetColumnNo.titleToNumber("AAA"));
-
-//        System.out.println(excelSheetColumnTitle.convertToTitle(703));
-
-//		System.out.println(subsetSum.getCount1(new int[]{2,1}, 1, 2));
-
-//		Arrays.stream(capitaliseFirstLetterOfElementOfArr.doWork(new String[] {"angad", "ram"})).forEach(System.out::println);
-//
-//		System.out.println(targetSum.findTargetSumWays(new int[]{1}, 2));
-
-//		System.out.println(countSubsetSumWithGivenDiff.getSubsetSum(new int[]{1,1,2,3}, 1, 4));
-
-//		System.out.println(countSubsetSumWithGivenSum.countSumSetSum1(new int[]{2,3,5,6,8,10}, 10, 6));
-
-//		System.out.println(coinChangeI.coinChange1(new int[]{1,2,5}, 5, 3));
-//		System.out.println(coinChangeI.coinChange(5, new int[]{1,2,5}));
-
-//		System.out.println(longestCommonSubsequence.longestCommonSubsequence("mhunuzqrkzsnidwbun", "szulspmhwpazoxijwbq"));
-//        System.out.println(longestCommonSubsequence.longestCommonSubsequence("geeks", "geeksfor", "geeksforge"));
-//		System.out.println(subsetSum.canPartition(new int[]{1,5,11,5}));
-
-//		System.out.println(subsetSum.subSetSum3(new int[]{2,2,3,5}, 6, 3));
-//		System.out.println(subsetSum.subSetSum2(new int[]{100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,99,97}, 5, 7));
-//		System.out.println(subsetSum.subSetSum1(new int[]{2,2,2,2,3,4,5}, 5, 7));
-//		System.out.println(subsetSum.subSetSum(new int[]{2,2,2,2,3,4,5}, 5, 7));
-//        System.out.println(subsetSum.subSetSum(new int[]{10,10,30,10,40}, 70, 5));
-
-		/*System.out.println(zeroOneKnapsack.knapsack(new int[]{1,3,4,5}, new int[]{1,4,5,7}, 7, 4));
-		System.out.println(zeroOneKnapsack.knapsackIter(new int[]{1,3,4,5}, new int[]{1,4,5,7}, 7, 4));*/
-
-		/*linkedListOperation.addFirst("a");
-		linkedListOperation.addFirst("is");
-		linkedListOperation.printList();
-		linkedListOperation.getSize();
-
-		linkedListOperation.addFirst("This");
-		linkedListOperation.addLast("list");
-		linkedListOperation.printList();
-		linkedListOperation.getSize();
-
-		linkedListOperation.deleteFirst();
-		linkedListOperation.printList();
-		linkedListOperation.getSize();
-
-		linkedListOperation.deleteLast();
-		linkedListOperation.printList();
-		linkedListOperation.getSize();*/
-
-		/*it.root = it.new Node(36);
-		it.root.left = it.new Node(26);
-		it.root.right = it.new Node(46);
-		it.root.left.left = it.new Node(21);
-		it.root.left.right = it.new Node(31);
-		it.root.left.left.left = it.new Node(11);
-		it.root.left.left.right = it.new Node(24);
-		it.root.right.left = it.new Node(41);
-		it.root.right.right = it.new Node(56);
-		it.root.right.right.left = it.new Node(51);
-		it.root.right.right.right = it.new Node(66);
-
-		it.inOrderTraverse(it.root);*/
 	}
 
 }
