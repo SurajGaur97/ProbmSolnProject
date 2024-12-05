@@ -1,4 +1,4 @@
-package programsProblem.practice.common;
+package programsProblem.utils;
 
 public class DoublyListNode {
     public int key;

@@ -1,6 +1,6 @@
 package programsProblem.practice.array.basic;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class MinimumNumberGame implements DriverClass<Integer> {
     @Override

@@ -1,6 +1,6 @@
 package programsProblem.practice.array.backtracking;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,6 @@ public class NextPermutation implements DriverClass<Integer> {
 
         for (int i = 0;i < nums.length;i++){
             if(res.contains(nums[i])) continue;
-            ;
             res.add(nums[i]);
             backTrack(nums, res);
             break;

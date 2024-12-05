@@ -1,6 +1,6 @@
 package programsProblem.practice.array.mapping;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class EqualRowAndColumnPairs2352 implements DriverClass<Integer> {
     @Override

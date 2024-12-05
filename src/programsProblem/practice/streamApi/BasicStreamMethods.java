@@ -1,12 +1,16 @@
 package programsProblem.practice.streamApi;
 
+import programsProblem.utils.DriverClass;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-public class BasicStreamMethods {
-    public void driverMethod() {
+public class BasicStreamMethods implements DriverClass<Integer> {
+    @Override
+    public void driverMethod(){
         List<Integer> intLst = Arrays.asList(2, 23, 22, 5, 7, 88, 7, 5, 23);
         List<String> strLst = Arrays.asList("Suraj", "Ankit", "Ram", "Prakash");
         getAvgOfList(intLst);
@@ -17,9 +21,23 @@ public class BasicStreamMethods {
         sortByAlphabet(strLst);
         minMaxValueFromList(intLst);
         secondHighLowNo(intLst);
+        flatAStreamOfList();
     }
 
-    private void secondHighLowNo(List<Integer> lst) {
+    private void flatAStreamOfList(){
+        Stream<List<String>> words = Stream.of(List.of("A", "b"), List.of("c", "d"));
+
+        //Using 2 intermediate operation
+//        Stream<Integer> flattenedNumbers = words
+//                .flatMap(List::stream)
+//                .map(String::length);
+
+        //using single but inner intermediate operation
+        Stream<Integer> lengths = words
+                .flatMap(list -> list.stream().map(String::length));
+    }
+
+    private void secondHighLowNo(List<Integer> lst){
         Integer secMin = lst.stream()
                 .distinct()
                 .sorted()

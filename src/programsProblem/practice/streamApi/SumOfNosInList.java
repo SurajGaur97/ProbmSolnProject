@@ -1,6 +1,6 @@
 package programsProblem.practice.streamApi;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 import java.util.Arrays;
 import java.util.List;

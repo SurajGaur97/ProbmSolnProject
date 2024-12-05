@@ -1,8 +1,8 @@
 package programsProblem.practice.linkedList;
 
-import programsProblem.practice.common.DriverClass;
 import programsProblem.practice.linkedList.utils.LinkedListBuilder;
 import programsProblem.practice.linkedList.utils.ListNode;
+import programsProblem.utils.DriverClass;
 
 public class OddEvenLinkedList328 implements DriverClass<Integer> {
     @Override

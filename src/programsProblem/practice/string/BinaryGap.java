@@ -1,6 +1,6 @@
 package programsProblem.practice.string;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class BinaryGap implements DriverClass<Integer> {
     @Override

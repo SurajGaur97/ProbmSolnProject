@@ -1,6 +1,6 @@
 package programsProblem.practice.string.slidingWindow;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class MaxVowels1456 implements DriverClass<Integer> {
     @Override

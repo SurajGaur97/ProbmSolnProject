@@ -1,6 +1,6 @@
 package programsProblem.practice.array.slidingwindow;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class FindMaxAverage implements DriverClass<Integer> {
     @Override

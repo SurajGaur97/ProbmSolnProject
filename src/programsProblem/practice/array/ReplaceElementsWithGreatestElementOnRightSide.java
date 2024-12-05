@@ -1,7 +1,7 @@
 package programsProblem.practice.array;
 
 import org.jetbrains.annotations.NotNull;
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class ReplaceElementsWithGreatestElementOnRightSide implements DriverClass {
     @Override

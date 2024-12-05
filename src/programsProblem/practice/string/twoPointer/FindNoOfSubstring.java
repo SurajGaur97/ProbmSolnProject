@@ -1,6 +1,6 @@
 package programsProblem.practice.string.twoPointer;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class FindNoOfSubstring implements DriverClass<String> {
     @Override

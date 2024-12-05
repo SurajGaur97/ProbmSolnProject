@@ -1,7 +1,7 @@
 package programsProblem.practice;
 
-import programsProblem.practice.common.DriverClass;
-import programsProblem.practice.tree.BottomViewOfBT;
+import programsProblem.practice.array.SumOfAllSubArraysOfSizeK;
+import programsProblem.utils.DriverClass;
 
 public class Main {
 
@@ -182,7 +182,15 @@ public class Main {
 //	static DriverClass<Integer> driverClass = new LowestCommonAncestor236();
 //	static DriverClass<Integer> driverClass = new RightViewOfBT();
 //	static DriverClass<Integer> driverClass = new MaximumLevelSum();
-static DriverClass<Integer> driverClass = new BottomViewOfBT();
+//	static DriverClass<Integer> driverClass = new BottomViewOfBT();
+//	static DriverClass<TreeNode> driverClass = new DeleteNode();
+//	static DriverClass<Boolean> driverClass = new KeysAndRooms();
+//	static DriverClass<Integer> driverClass = new NoOfProvinces();
+//	static DriverClass<Boolean> driverClass = new BalancedParentheses();
+//	static DriverClass<Integer> driverClass = new FindSpecialPrimeNo();
+//	static DriverClass<Boolean> driverClass = new DetectCycleInGraph();
+//	static DriverClass<Boolean> driverClass = new DetectCycleInGraphBfs();
+static DriverClass<Integer> driverClass = new SumOfAllSubArraysOfSizeK();
 
 	public static void main(String[] args) {
 		driverClass.driverMethod();

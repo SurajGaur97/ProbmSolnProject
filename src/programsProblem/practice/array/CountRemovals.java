@@ -1,6 +1,6 @@
 package programsProblem.practice.array;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class CountRemovals implements DriverClass<Integer> {
     public static int countRemovals(String str) {

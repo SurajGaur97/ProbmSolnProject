@@ -1,6 +1,6 @@
 package programsProblem.practice.array.matrix;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class Rotate90Degree implements DriverClass<Integer> {
     @Override

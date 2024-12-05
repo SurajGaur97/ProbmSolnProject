@@ -1,18 +1,44 @@
 package programsProblem.target75.string;
 
+import programsProblem.utils.DriverClass;
+
 import java.util.Stack;
 
-public class ValidParentheses {
-	
-	//Simplest Solution
-	public boolean isValid2(String s) {
-		Stack<Character> stack = new Stack<>();
-		
-		for(int i = 0; i < s.length(); i++) {
-			char chr = s.charAt(i);
-			
-			if(chr == ')') {
-				if(stack.peek() == '(') {
+public class ValidParentheses implements DriverClass<Boolean> {
+
+    @Override
+    public void driverMethod(){
+//		String str = "(])";
+        String str = "()[]{}";
+        printElement(isValid3(str));
+    }
+
+    public boolean isValid3(String s){
+        Stack<Character> stk = new Stack<>();
+
+        for(char ch : s.toCharArray()){
+            if(ch == '(') stk.push(')');
+            else if(ch == '{') stk.push('}');
+            else if(ch == '[') stk.push(']');
+            else {
+                if(!stk.isEmpty() && stk.peek() == ch)
+                    stk.pop();
+                else return false;
+            }
+        }
+
+        return stk.isEmpty();
+    }
+
+    //Simplest Solution
+    public boolean isValid2(String s){
+        Stack<Character> stack = new Stack<>();
+
+        for(int i = 0;i < s.length();i++){
+            char chr = s.charAt(i);
+
+            if(chr == ')'){
+                if(stack.peek() == '('){
 					stack.pop();
 				}else {
 					return false;
@@ -91,4 +117,5 @@ public class ValidParentheses {
 		
 		return stack.isEmpty();
 	}
+
 }

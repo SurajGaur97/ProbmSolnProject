@@ -12,7 +12,7 @@ public class LeftViewOfBT {
 
     public void driverMethod() {
 //        TreeNode root = new TreeBuilder().buildTree("1 2 3 4 5 6 7 N 9 N N N N N N 8");
-        TreeNode root = new TreeBuilder().buildTree("4 5 2 N N 3 1 6 7");
+        TreeNode root = TreeBuilder.buildTree("4 5 2 N N 3 1 6 7");
 
         System.out.println(leftView(root));
     }

@@ -1,7 +1,9 @@
 package programsProblem.easyLeetcode;
 
+import programsProblem.practice.tree.utils.TreeNode;
+
 public class IsSameTree {
-    public boolean isSameTree(TreeNode p, TreeNode q) {
+    public boolean isSameTree(TreeNode p, TreeNode q){
         if(size(p) != size(q)) return false;
         int count, size;
 

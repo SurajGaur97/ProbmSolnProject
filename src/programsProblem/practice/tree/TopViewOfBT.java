@@ -1,9 +1,9 @@
 package programsProblem.practice.tree;
 
-import programsProblem.practice.common.DriverClass;
 import programsProblem.practice.tree.utils.Pair;
 import programsProblem.practice.tree.utils.TreeBuilder;
 import programsProblem.practice.tree.utils.TreeNode;
+import programsProblem.utils.DriverClass;
 
 import java.util.*;
 

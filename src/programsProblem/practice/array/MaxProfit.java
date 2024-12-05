@@ -1,6 +1,6 @@
 package programsProblem.practice.array;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package programsProblem.target75.binaryBitManupulation;
+package programsProblem.target75.bitManupulation;
 
 public class CountingBits {
 	/** #3
@@ -30,7 +30,7 @@ public class CountingBits {
 	 * @return int
 	 */
 	public int[] countBits(int n) {
-		int ans[] = new int[n + 1];
+		int[] ans = new int[n + 1];
 		ans[0] = 0;
 		
         for(int i = 1; i <= n; i++) {

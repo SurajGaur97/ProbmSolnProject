@@ -10,7 +10,7 @@ import java.util.Queue;
 
 public class LevelOrderTraversalBT {
     public void driverMethod() {
-        TreeNode root = new TreeBuilder().buildTree("1 2 3 4 5 6 7 9");
+        TreeNode root = TreeBuilder.buildTree("1,2,3,4,5,6,7,9");
 
         System.out.println(levelOrderTraversalIterative(root));
     }
@@ -27,23 +27,25 @@ public class LevelOrderTraversalBT {
     //step.8: add the right node of curr to the queue if the curr.right is not null.
     //step.9: add the list of integer lst to list of list: res.
     //step.10: return the list of list: res, created.
-    private List<List<Integer>> levelOrderTraversalIterative(TreeNode root) {
+    private List<List<Integer>> levelOrderTraversalIterative(TreeNode root){
         List<List<Integer>> res = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
+        if(root == null) return res;
 
-        while (!queue.isEmpty()) {
-            List<Integer> lst = new ArrayList<>();
+        queue.add(root);
+        while (!queue.isEmpty()){
+            List<Integer> lvl = new ArrayList<>();
             int size = queue.size();    //Need to take separately because it changes every time when queue changes
-            for (int i = 0; i < size; i++) {
+
+            for(int i = 0;i < size;i++){    //We need to use loop here over, size because here we need to maintain an array of that queue size. In other cases, it is not needed.
                 TreeNode curr = queue.poll();
-                lst.add(curr.val);
-                if(curr.left != null)
-                    queue.add(curr.left);
-                if(curr.right != null)
-                    queue.add(curr.right);
+
+                lvl.add(curr.val);
+
+                if(curr.left != null) queue.add(curr.left);
+                if(curr.right != null) queue.add(curr.right);
             }
-            res.add(lst);
+            res.add(lvl);
         }
         return res;
     }

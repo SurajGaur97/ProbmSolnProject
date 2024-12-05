@@ -1,6 +1,6 @@
 package programsProblem.company.ibm;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 import java.io.BufferedReader;
 import java.io.IOException;

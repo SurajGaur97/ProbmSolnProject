@@ -1,6 +1,6 @@
 package programsProblem.practice.implementation;
 
-import programsProblem.practice.common.Entry;
+import programsProblem.utils.Entry;
 
 import java.util.ArrayList;
 import java.util.List;

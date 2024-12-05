@@ -1,7 +1,7 @@
 package programsProblem.practice.linkedList;
 
-import programsProblem.practice.common.DriverClass;
 import programsProblem.practice.linkedList.utils.ListNode;
+import programsProblem.utils.DriverClass;
 
 public class MergeTwoSortedList implements DriverClass<Integer> {
     @Override

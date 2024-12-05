@@ -1,7 +1,6 @@
 package programsProblem.practice.string;
 
-import programsProblem.practice.array.mapping.EqualRowAndColumnPairs2352;
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class RemovingStarsFromString2390 implements DriverClass<String> {
     @Override

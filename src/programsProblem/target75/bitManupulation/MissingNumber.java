@@ -1,4 +1,4 @@
-package programsProblem.target75.binaryBitManupulation;
+package programsProblem.target75.bitManupulation;
 
 public class MissingNumber {
 	/** #4	

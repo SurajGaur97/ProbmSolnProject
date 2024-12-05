@@ -1,6 +1,6 @@
 package programsProblem.practice.backTrack;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 import java.util.HashSet;
 import java.util.Set;

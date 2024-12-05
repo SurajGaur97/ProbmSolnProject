@@ -1,6 +1,6 @@
 package programsProblem.practice.streamApi;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

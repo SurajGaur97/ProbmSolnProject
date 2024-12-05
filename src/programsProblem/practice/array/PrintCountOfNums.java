@@ -1,6 +1,6 @@
 package programsProblem.practice.array;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class PrintCountOfNums implements DriverClass<Integer> {
     @Override

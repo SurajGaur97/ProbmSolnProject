@@ -1,6 +1,6 @@
 package programsProblem.practice.web.nagarrow;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class MethodPrimitiveType implements DriverClass<Integer> {
     static void method(Integer i) {

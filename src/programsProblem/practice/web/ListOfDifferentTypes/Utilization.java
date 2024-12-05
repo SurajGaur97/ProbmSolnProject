@@ -1,6 +1,6 @@
 package programsProblem.practice.web.ListOfDifferentTypes;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class Utilization implements DriverClass<Integer> {
     @Override

@@ -1,9 +1,7 @@
 package programsProblem.practice.array.stack;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 public class AsteroidCollision implements DriverClass<Integer> {

@@ -1,10 +1,8 @@
 package programsProblem.practice.array.queue;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 public class Dota2Senate649 implements DriverClass<String> {

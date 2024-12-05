@@ -1,4 +1,4 @@
-package programsProblem.practice.common;
+package programsProblem.utils;
 
 public class Entry<K, V> {
     private final K key;

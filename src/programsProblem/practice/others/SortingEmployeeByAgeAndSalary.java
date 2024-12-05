@@ -1,6 +1,6 @@
-package programsProblem.practice.streamApi;
+package programsProblem.practice.others;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,8 +8,8 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * @implNote There is an Employee class short the class's list by age in increasing order and if age
- * are equal for 2 employees then sort the employees list by their salary in decreasing order of salary.
+ * @implNote There is an Employee class sort the class's list by age in increasing order, and if age
+ * is equal for 2 employees, then sort the employees list by their salary in decreasing order of salary.
  */
 public class SortingEmployeeByAgeAndSalary implements DriverClass<Integer> {
     @Override

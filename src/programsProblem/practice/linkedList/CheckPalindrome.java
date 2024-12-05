@@ -1,9 +1,9 @@
 package programsProblem.practice.linkedList;
 
-import programsProblem.practice.common.DriverClass;
 import programsProblem.practice.linkedList.utils.LinkedListBuilder;
 import programsProblem.practice.linkedList.utils.LinkedListUtils;
 import programsProblem.practice.linkedList.utils.ListNode;
+import programsProblem.utils.DriverClass;
 
 import java.util.Stack;
 

@@ -1,15 +1,15 @@
 package programsProblem.practice.implementation;
 
-import programsProblem.practice.common.DoublyListNode;
+import programsProblem.utils.DoublyListNode;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class LRUCache {
-    private int capacity;   //size of cache.
-    private DoublyListNode head;   //Ordering list head
-    private DoublyListNode tail;   //Ordering list tail
-    private Map<Integer, DoublyListNode> cache;   //Cache memory
+    private final int capacity;   //size of cache.
+    private final DoublyListNode head;   //Ordering list head
+    private final DoublyListNode tail;   //Ordering list tail
+    private final Map<Integer, DoublyListNode> cache;   //Cache memory
 
     public LRUCache(int capacity) {
         this.capacity = capacity;

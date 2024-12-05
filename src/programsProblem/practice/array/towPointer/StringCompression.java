@@ -1,6 +1,6 @@
 package programsProblem.practice.array.towPointer;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class StringCompression implements DriverClass<Integer> {
     @Override

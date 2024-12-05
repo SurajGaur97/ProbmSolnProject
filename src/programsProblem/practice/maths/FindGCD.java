@@ -1,6 +1,6 @@
 package programsProblem.practice.maths;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class FindGCD implements DriverClass<Integer> {
     @Override

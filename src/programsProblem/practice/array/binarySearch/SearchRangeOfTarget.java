@@ -1,6 +1,6 @@
 package programsProblem.practice.array.binarySearch;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 import java.util.HashMap;
 import java.util.Map;

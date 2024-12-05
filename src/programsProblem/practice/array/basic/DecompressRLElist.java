@@ -1,6 +1,6 @@
 package programsProblem.practice.array.basic;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class DecompressRLElist implements DriverClass<Integer> {
     @Override

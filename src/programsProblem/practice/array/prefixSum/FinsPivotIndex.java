@@ -1,6 +1,6 @@
 package programsProblem.practice.array.prefixSum;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class FinsPivotIndex implements DriverClass<Integer> {
     @Override

@@ -1,6 +1,6 @@
 package programsProblem.practice.array.pathFinding;
 
-import programsProblem.practice.common.DriverClass;
+import programsProblem.utils.DriverClass;
 
 public class UniquePaths implements DriverClass<Integer> {
     @Override
