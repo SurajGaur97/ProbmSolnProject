@@ -1,9 +1,8 @@
 package programsProblem.practice.array;
 
-import org.jetbrains.annotations.NotNull;
 import programsProblem.utils.DriverClass;
 
-public class ReplaceElementsWithGreatestElementOnRightSide implements DriverClass {
+public class ReplaceElementsWithGreatestElementOnRightSide implements DriverClass<Integer> {
     @Override
     public void driverMethod() {
 //        int[] arr = new int[]{500};
@@ -29,7 +28,7 @@ public class ReplaceElementsWithGreatestElementOnRightSide implements DriverClas
     }
 
     //By me
-    public int[] replaceElements(int @NotNull [] arr) {
+    public int[] replaceElements(int[] arr) {
         int replValue = arr[arr.length - 1];
 
         for (int i = arr.length - 1;i >= 0;i--){

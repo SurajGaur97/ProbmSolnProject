@@ -13,6 +13,7 @@ public class BasicStreamMethods implements DriverClass<Integer> {
     public void driverMethod(){
         List<Integer> intLst = Arrays.asList(2, 23, 22, 5, 7, 88, 7, 5, 23);
         List<String> strLst = Arrays.asList("Suraj", "Ankit", "Ram", "Prakash");
+
         getAvgOfList(intLst);
         getSumOfList(intLst);
         getUpperLowerCases(strLst);
@@ -21,10 +22,10 @@ public class BasicStreamMethods implements DriverClass<Integer> {
         sortByAlphabet(strLst);
         minMaxValueFromList(intLst);
         secondHighLowNo(intLst);
-        flatAStreamOfList();
+        flatAsStreamOfList();
     }
 
-    private void flatAStreamOfList(){
+    private void flatAsStreamOfList(){
         Stream<List<String>> words = Stream.of(List.of("A", "b"), List.of("c", "d"));
 
         //Using 2 intermediate operation
@@ -47,7 +48,7 @@ public class BasicStreamMethods implements DriverClass<Integer> {
 
         Integer secMax = lst.stream()
                 .distinct()
-                .sorted((a, b) -> Integer.compare(b, a))
+                .sorted((a, b) -> Integer.compare(b, a))    //.sorted((a, b) -> b - a)
 //                .sorted(Comparator.reverseOrder())
                 .skip(1)
                 .findFirst()

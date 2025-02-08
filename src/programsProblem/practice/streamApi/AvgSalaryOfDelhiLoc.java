@@ -24,6 +24,7 @@ public class AvgSalaryOfDelhiLoc implements DriverClass<Integer> {
         OptionalDouble averageSalary = employees.stream()
                 .filter(emp -> emp.isActive() && "Delhi".equalsIgnoreCase(emp.getLocation()))  // Filter active employees in Delhi
                 .mapToDouble(Employee::getSalary)                                             // Map to salary values
+//                .mapToDouble(emp -> emp.getSalary())
                 .average();                                                                  // Calculate average
 
         averageSalary.ifPresentOrElse(
