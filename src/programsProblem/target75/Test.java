@@ -1,6 +1,6 @@
 package programsProblem.target75;
 
-import programsProblem.practice.streamApi.AvgSalaryOfDelhiLoc;
+import programsProblem.practice.streamApi.AvgSalary;
 import programsProblem.utils.DriverClass;
 
 import java.util.Arrays;
@@ -10,19 +10,19 @@ import java.util.OptionalDouble;
 public class Test implements DriverClass<Integer> {
     @Override
     public void driverMethod(){
-        List<AvgSalaryOfDelhiLoc.Employee> employees = Arrays.asList(
-                new AvgSalaryOfDelhiLoc.Employee(1, "Alice", "Delhi", 50000, true),
-                new AvgSalaryOfDelhiLoc.Employee(2, "Bob", "Delhi", 60000, false),
-                new AvgSalaryOfDelhiLoc.Employee(3, "Charlie", "Delhi", 70000, true),
-                new AvgSalaryOfDelhiLoc.Employee(4, "David", "Mumbai", 55000, true),
-                new AvgSalaryOfDelhiLoc.Employee(5, "Eve", "Delhi", 65000, true)
+        List<AvgSalary.Employee> employees = Arrays.asList(
+                new AvgSalary.Employee(1, "Alice", "Delhi", 50000, true),
+                new AvgSalary.Employee(2, "Bob", "Delhi", 60000, false),
+                new AvgSalary.Employee(3, "Charlie", "Delhi", 70000, true),
+                new AvgSalary.Employee(4, "David", "Mumbai", 55000, true),
+                new AvgSalary.Employee(5, "Eve", "Delhi", 65000, true)
         );
 
         OptionalDouble averageSalary = employees.stream()
                 .filter(item -> {
                     return item.getLocation().equalsIgnoreCase("DELHI") && item.isActive();
                 })
-                .mapToDouble(AvgSalaryOfDelhiLoc.Employee::getSalary)
+                .mapToDouble(AvgSalary.Employee::getSalary)
                 .average();
 
         averageSalary.ifPresentOrElse(

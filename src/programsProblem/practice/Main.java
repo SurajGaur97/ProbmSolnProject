@@ -1,9 +1,6 @@
 package programsProblem.practice;
 
-import programsProblem.practice.array.SumOfAllSubArraysOfSizeK;
-import programsProblem.practice.streamApi.AvgSalaryOfDelhiLoc;
-import programsProblem.practice.streamApi.BasicStreamMethods;
-import programsProblem.practice.streamApi.FirstNonRepeatingCharInString;
+import programsProblem.practice.streamApi.AvgSalary;
 import programsProblem.utils.DriverClass;
 
 public class Main {
@@ -196,7 +193,7 @@ public class Main {
 //	static DriverClass<Integer> driverClass = new SumOfAllSubArraysOfSizeK();
 //	static DriverClass<Integer> driverClass = new BasicStreamMethods();
 //	static DriverClass<Integer> driverClass = new FirstNonRepeatingCharInString();
-    static DriverClass<Integer> driverClass = new AvgSalaryOfDelhiLoc();
+    static DriverClass<Integer> driverClass = new AvgSalary();
 
 	public static void main(String[] args) {
 		driverClass.driverMethod();
