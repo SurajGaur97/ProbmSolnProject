@@ -1,6 +1,7 @@
 package programsProblem.practice;
 
 import programsProblem.practice.streamApi.AvgSalary;
+import programsProblem.practice.streamApi.Medium65streamApi;
 import programsProblem.utils.DriverClass;
 
 public class Main {
@@ -193,7 +194,8 @@ public class Main {
 //	static DriverClass<Integer> driverClass = new SumOfAllSubArraysOfSizeK();
 //	static DriverClass<Integer> driverClass = new BasicStreamMethods();
 //	static DriverClass<Integer> driverClass = new FirstNonRepeatingCharInString();
-    static DriverClass<Integer> driverClass = new AvgSalary();
+//    static DriverClass<Integer> driverClass = new AvgSalary();
+	static DriverClass<String> driverClass = new Medium65streamApi();
 
 	public static void main(String[] args) {
 		driverClass.driverMethod();
