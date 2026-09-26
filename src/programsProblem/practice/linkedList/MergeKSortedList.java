@@ -1,8 +1,9 @@
 package programsProblem.practice.linkedList;
 
 import programsProblem.practice.linkedList.utils.ListNode;
+import programsProblem.utils.DriverClass;
 
-public class MergeKSortedList {
+public class MergeKSortedList implements DriverClass<Integer> {
     public void driverMethod() {
         ListNode l1 = new ListNode(1);
         l1.next = new ListNode(4);

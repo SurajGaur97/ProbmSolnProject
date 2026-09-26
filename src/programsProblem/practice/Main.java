@@ -1,5 +1,7 @@
 package programsProblem.practice;
 
+import programsProblem.easyLeetcode.ListNode;
+import programsProblem.practice.implementation.LruCacheNew;
 import programsProblem.practice.streamApi.AvgSalary;
 import programsProblem.practice.streamApi.Medium65streamApi;
 import programsProblem.utils.DriverClass;
@@ -195,10 +197,42 @@ public class Main {
 //	static DriverClass<Integer> driverClass = new BasicStreamMethods();
 //	static DriverClass<Integer> driverClass = new FirstNonRepeatingCharInString();
 //    static DriverClass<Integer> driverClass = new AvgSalary();
-	static DriverClass<String> driverClass = new Medium65streamApi();
+//	static DriverClass<String> driverClass = new Medium65streamApi();
+	static LruCacheNew driverClass = new LruCacheNew();
 
 	public static void main(String[] args) {
-		driverClass.driverMethod();
+//		driverClass.driverMethod();
+
+		ListNode list1 = new ListNode(1);
+		list1.next = new ListNode(2);
+		list1.next.next = new ListNode(4);
+
+		ListNode list2 = new ListNode(1);
+		list2.next = new ListNode(3);
+		list2.next.next = new ListNode(4);
+
+		ListNode head = new ListNode();
+		ListNode curr = head;
+
+		while(list1 != null && list2 != null) {
+			if(list1.val <= list2.val) {
+				curr.next = list1;
+				list1 = list1.next;
+			}
+			else {
+				curr.next = list2;
+				list2 = list2.next;
+			}
+			curr = curr.next;
+		}
+
+		if(list1 != null)
+			curr.next = list1;
+
+		if(list2 != null)
+			curr.next = list2;
+
+		System.out.printf("Helloe");
 	}
 
 }

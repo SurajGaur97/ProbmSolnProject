@@ -34,16 +34,23 @@ public class SearchInRotatedSortedArray implements DriverClass<Integer> {
     private int search_2(int[] nums, int target) {
         int l = 0, r = nums.length - 1;
 
-        while(l < r) {
+        while(l <= r) {
             int mid = l + (r - l) / 2;
 
             if(nums[mid] == target)
                 return mid;
-
-            if(nums[l] <= target && target < nums[mid]) {
-                r = mid;
+            if (nums[l] < nums[mid]) {
+                if (nums[l] <= target && target < nums[mid]) {
+                    r = mid;
+                } else {
+                    l = mid + 1;
+                }
             } else {
-                l = mid + 1;
+                if (nums[mid] < target && target < nums[r]) {
+                    l = mid + 1;
+                } else {
+                    r = mid;
+                }
             }
         }
 

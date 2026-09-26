@@ -1,5 +1,7 @@
 package programsProblem.target75.array;
 
+import programsProblem.utils.DriverClass;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -7,7 +9,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-public class ThreeSum {
+public class ThreeSum implements DriverClass<Integer> {
 
 	/***
 	 * Given an integer array nums, return all the triplets [nums[i], nums[j],
@@ -22,10 +24,46 @@ public class ThreeSum {
 	 * 0 + 1 + (-1) = 0. nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0. The
 	 * distinct triplets are [-1,0,1] and [-1,-1,2]. Notice that the order of the
 	 * output and the order of the triplets does not matter.
-	 * 
-	 * @param nums
-	 * @return List<List<Integer>>
 	 */
+
+
+	@Override
+	public void driverMethod() {
+		int[] nums = new int[]{-1,0,1,2,-1,-4};
+		int target = 0;
+
+		System.out.println(threeSumNewSol(nums));
+	}
+
+	public List<List<Integer>> threeSumNewSol(int[] nums) {
+		Arrays.sort(nums);
+
+		List<List<Integer>> res = new ArrayList<>();
+		int r = nums.length - 1;
+		for(int i = 0; i < nums.length; i++) {
+			int l = i + 1;
+
+			while(l < r) {
+				int sum = nums[i] + nums[l] + nums[r];
+
+				if(sum == 0) {
+					while(l < r && nums[l] == nums[l+1])
+						l++;
+					while(l < r && nums[r] == nums[r-1])
+						r--;
+
+					res.add(List.of(nums[i], nums[l], nums[r]));
+					l++; r--;
+				}
+				else if(sum < 0)
+					l++;
+				else if(sum > 0)
+					r--;
+			}
+		}
+		return res;
+	}
+
 	public List<List<Integer>> threeSum(int[] nums) {
 		Arrays.sort(nums);
 		Set<List<Integer>> result = new HashSet<>();
@@ -95,4 +133,5 @@ public class ThreeSum {
 		}
 		return ans;
 	}
+
 }
