@@ -1,8 +1,12 @@
 package programsProblem.target75;
 
 import programsProblem.practice.linkedList.MergeKSortedList;
+import programsProblem.target75.heap.MergeKSortedLists;
+import programsProblem.target75.interval.InsertInterval;
+import programsProblem.target75.interval.MergeIntervals;
 import programsProblem.target75.linkedList.ReorderList;
 import programsProblem.target75.linkedList.util.ListNode;
+import programsProblem.target75.matrix.RotateImage;
 import programsProblem.target75.matrix.SetMatrixZeroes;
 import programsProblem.utils.DriverClass;
 
@@ -53,7 +57,11 @@ public class ProgramRunner {
 //    static DriverClass<Boolean> driverClass = new CanPlaceFlowers();
 //    DriverClass<ListNode> driverClass = new RemoveNthFromEnd();
 //    DriverClass<Integer> driverClass = new MergeKSortedList();
-    DriverClass<Integer> driverClass = new SetMatrixZeroes();
+//    DriverClass<Integer> driverClass = new SetMatrixZeroes();
+//    DriverClass<Integer> driverClass = new RotateImage();
+//    DriverClass<Integer> driverClass = new InsertInterval();
+//    DriverClass<Integer> driverClass = new MergeIntervals();
+    DriverClass<Integer> driverClass = new MergeKSortedLists();
 
     /**
      * This method is calling from {@link programsProblem.target75.main.Main75} class.

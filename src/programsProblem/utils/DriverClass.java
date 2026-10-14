@@ -104,7 +104,7 @@ public interface DriverClass<T> {
     }
 
 
-    private void printElement(programsProblem.target75.linkedList.util.ListNode head){
+    default void printElement(programsProblem.target75.linkedList.util.ListNode head){
         programsProblem.target75.linkedList.util.ListNode current = head;
 
         while (current != null){

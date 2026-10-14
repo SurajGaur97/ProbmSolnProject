@@ -3,7 +3,7 @@ package programsProblem.target75.linkedList;
 import programsProblem.target75.linkedList.util.ListNode;
 import programsProblem.utils.DriverClass;
 
-public class RemoveNthFromEnd  implements DriverClass<ListNode> {
+public class RemoveNthFromEnd  implements DriverClass<Integer> {
     @Override
     public void driverMethod() {
         ListNode head = new ListNode(1);

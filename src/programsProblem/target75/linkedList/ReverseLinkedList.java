@@ -4,7 +4,7 @@ import programsProblem.target75.linkedList.util.LinkedListBuilder;
 import programsProblem.target75.linkedList.util.ListNode;
 import programsProblem.utils.DriverClass;
 
-public class ReverseLinkedList implements DriverClass<ListNode> {
+public class ReverseLinkedList implements DriverClass<Integer> {
     @Override
     public void driverMethod(){
         ListNode listNode = LinkedListBuilder.buildLinkedList("1,2,3,4,5");
